@@ -1,0 +1,456 @@
+[0.067s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--merge-install']
+[0.067s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=True, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=24, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x792fbaaf3ca0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x792fbaaf3700>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x792fbaaf3700>>)
+[0.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.153s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/zjh/vrx_ws'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['python_setup_py']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extensions ['python_setup_py']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extension 'ros'
+[0.164s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx/vrx_gz' with type 'ros.ament_cmake' and name 'vrx_gz'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extension 'ros'
+[0.165s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx/vrx_ros' with type 'ros.ament_cmake' and name 'vrx_ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extension 'ros'
+[0.166s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx/vrx_urdf/vrx_gazebo' with type 'ros.ament_cmake' and name 'vrx_gazebo'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extension 'ros'
+[0.167s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx/vrx_urdf/wamv_description' with type 'ros.ament_cmake' and name 'wamv_description'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extension 'ros'
+[0.167s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx/vrx_urdf/wamv_gazebo' with type 'ros.ament_cmake' and name 'wamv_gazebo'
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.181s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.181s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.182s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 286 installed packages in /opt/ros/humble
+[0.189s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.208s] DEBUG:colcon.colcon_core.verb:Building package 'vrx_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zjh/vrx_ws/build/vrx_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zjh/vrx_ws/install', 'merge_install': True, 'path': '/home/zjh/vrx_ws/src/vrx/vrx_urdf/vrx_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'cmake_args' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'cmake_target' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.208s] DEBUG:colcon.colcon_core.verb:Building package 'vrx_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zjh/vrx_ws/build/vrx_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zjh/vrx_ws/install', 'merge_install': True, 'path': '/home/zjh/vrx_ws/src/vrx/vrx_ros', 'symlink_install': False, 'test_result_base': None}
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_args' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_target' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_clean_cache' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_clean_first' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_force_configure' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'ament_cmake_args' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'catkin_cmake_args' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.209s] DEBUG:colcon.colcon_core.verb:Building package 'vrx_gz' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zjh/vrx_ws/build/vrx_gz', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zjh/vrx_ws/install', 'merge_install': True, 'path': '/home/zjh/vrx_ws/src/vrx/vrx_gz', 'symlink_install': False, 'test_result_base': None}
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'cmake_args' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'cmake_target' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.209s] DEBUG:colcon.colcon_core.verb:Building package 'wamv_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zjh/vrx_ws/build/wamv_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zjh/vrx_ws/install', 'merge_install': True, 'path': '/home/zjh/vrx_ws/src/vrx/vrx_urdf/wamv_description', 'symlink_install': False, 'test_result_base': None}
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.209s] DEBUG:colcon.colcon_core.verb:Building package 'wamv_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zjh/vrx_ws/build/wamv_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zjh/vrx_ws/install', 'merge_install': True, 'path': '/home/zjh/vrx_ws/src/vrx/vrx_urdf/wamv_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.209s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.210s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.210s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zjh/vrx_ws/src/vrx/vrx_urdf/vrx_gazebo' with build type 'ament_cmake'
+[0.210s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zjh/vrx_ws/src/vrx/vrx_urdf/vrx_gazebo'
+[0.211s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.211s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.211s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.213s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zjh/vrx_ws/src/vrx/vrx_ros' with build type 'ament_cmake'
+[0.213s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zjh/vrx_ws/src/vrx/vrx_ros'
+[0.213s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.213s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.216s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zjh/vrx_ws/build/vrx_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zjh/vrx_ws/src/vrx/vrx_urdf/vrx_gazebo -DCMAKE_INSTALL_PREFIX=/home/zjh/vrx_ws/install
+[0.219s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zjh/vrx_ws/build/vrx_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zjh/vrx_ws/src/vrx/vrx_ros -DCMAKE_INSTALL_PREFIX=/home/zjh/vrx_ws/install
+[0.635s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zjh/vrx_ws/build/vrx_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zjh/vrx_ws/src/vrx/vrx_urdf/vrx_gazebo -DCMAKE_INSTALL_PREFIX=/home/zjh/vrx_ws/install
+[0.636s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zjh/vrx_ws/build/vrx_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zjh/vrx_ws/build/vrx_gazebo -- -j24 -l24
+[0.824s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zjh/vrx_ws/build/vrx_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zjh/vrx_ws/build/vrx_gazebo -- -j24 -l24
+[0.847s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zjh/vrx_ws/build/vrx_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zjh/vrx_ws/build/vrx_gazebo
+[0.896s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrx_gazebo)
+[0.897s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zjh/vrx_ws/build/vrx_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zjh/vrx_ws/build/vrx_gazebo
+[0.898s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install' for CMake module files
+[0.898s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install' for CMake config files
+[0.898s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gazebo', 'cmake_prefix_path')
+[0.898s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/vrx_gazebo/hook/cmake_prefix_path.ps1'
+[0.898s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zjh/vrx_ws/install/share/vrx_gazebo/hook/cmake_prefix_path.dsv'
+[0.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/vrx_gazebo/hook/cmake_prefix_path.sh'
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib'
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/bin'
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib/pkgconfig/vrx_gazebo.pc'
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib/python3.10/site-packages'
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/bin'
+[0.900s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_gazebo/package.ps1'
+[0.900s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zjh/vrx_ws/install/share/vrx_gazebo/package.dsv'
+[0.900s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_gazebo/package.sh'
+[0.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_gazebo/package.bash'
+[0.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_gazebo/package.zsh'
+[0.901s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zjh/vrx_ws/install/share/colcon-core/packages/vrx_gazebo)
+[0.916s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrx_gazebo)
+[0.917s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install' for CMake module files
+[0.917s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install' for CMake config files
+[0.917s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gazebo', 'cmake_prefix_path')
+[0.917s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/vrx_gazebo/hook/cmake_prefix_path.ps1'
+[0.917s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zjh/vrx_ws/install/share/vrx_gazebo/hook/cmake_prefix_path.dsv'
+[0.918s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/vrx_gazebo/hook/cmake_prefix_path.sh'
+[0.918s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib'
+[0.918s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/bin'
+[0.918s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib/pkgconfig/vrx_gazebo.pc'
+[0.918s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib/python3.10/site-packages'
+[0.918s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/bin'
+[0.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_gazebo/package.ps1'
+[0.919s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zjh/vrx_ws/install/share/vrx_gazebo/package.dsv'
+[0.919s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_gazebo/package.sh'
+[0.919s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_gazebo/package.bash'
+[0.919s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_gazebo/package.zsh'
+[0.919s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zjh/vrx_ws/install/share/colcon-core/packages/vrx_gazebo)
+[0.920s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zjh/vrx_ws/src/vrx/vrx_urdf/wamv_description' with build type 'ament_cmake'
+[0.920s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zjh/vrx_ws/src/vrx/vrx_urdf/wamv_description'
+[0.920s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.920s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.924s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zjh/vrx_ws/build/wamv_description': AMENT_PREFIX_PATH=/home/zjh/vrx_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zjh/vrx_ws/install:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/zjh/vrx_ws/install/share/vrx_gazebo/models:/home/zjh/vrx_ws/install/share PYTHONPATH=/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/zjh/vrx_ws/src/vrx/vrx_urdf/wamv_description -DCMAKE_INSTALL_PREFIX=/home/zjh/vrx_ws/install
+[1.096s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zjh/vrx_ws/build/vrx_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zjh/vrx_ws/src/vrx/vrx_ros -DCMAKE_INSTALL_PREFIX=/home/zjh/vrx_ws/install
+[1.096s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zjh/vrx_ws/build/vrx_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zjh/vrx_ws/build/vrx_ros -- -j24 -l24
+[1.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zjh/vrx_ws/build/wamv_description' returned '0': AMENT_PREFIX_PATH=/home/zjh/vrx_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zjh/vrx_ws/install:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/zjh/vrx_ws/install/share/vrx_gazebo/models:/home/zjh/vrx_ws/install/share PYTHONPATH=/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/zjh/vrx_ws/src/vrx/vrx_urdf/wamv_description -DCMAKE_INSTALL_PREFIX=/home/zjh/vrx_ws/install
+[1.371s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zjh/vrx_ws/build/wamv_description': AMENT_PREFIX_PATH=/home/zjh/vrx_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zjh/vrx_ws/install:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/zjh/vrx_ws/install/share/vrx_gazebo/models:/home/zjh/vrx_ws/install/share PYTHONPATH=/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zjh/vrx_ws/build/wamv_description -- -j24 -l24
+[1.486s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zjh/vrx_ws/build/wamv_description' returned '0': AMENT_PREFIX_PATH=/home/zjh/vrx_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zjh/vrx_ws/install:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/zjh/vrx_ws/install/share/vrx_gazebo/models:/home/zjh/vrx_ws/install/share PYTHONPATH=/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zjh/vrx_ws/build/wamv_description -- -j24 -l24
+[1.504s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zjh/vrx_ws/build/wamv_description': AMENT_PREFIX_PATH=/home/zjh/vrx_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zjh/vrx_ws/install:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/zjh/vrx_ws/install/share/vrx_gazebo/models:/home/zjh/vrx_ws/install/share PYTHONPATH=/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zjh/vrx_ws/build/wamv_description
+[1.520s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wamv_description)
+[1.520s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install' for CMake module files
+[1.521s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zjh/vrx_ws/build/wamv_description' returned '0': AMENT_PREFIX_PATH=/home/zjh/vrx_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zjh/vrx_ws/install:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/zjh/vrx_ws/install/share/vrx_gazebo/models:/home/zjh/vrx_ws/install/share PYTHONPATH=/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zjh/vrx_ws/build/wamv_description
+[1.521s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install' for CMake config files
+[1.521s] Level 1:colcon.colcon_core.shell:create_environment_hook('wamv_description', 'cmake_prefix_path')
+[1.521s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/wamv_description/hook/cmake_prefix_path.ps1'
+[1.522s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zjh/vrx_ws/install/share/wamv_description/hook/cmake_prefix_path.dsv'
+[1.522s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/wamv_description/hook/cmake_prefix_path.sh'
+[1.522s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib'
+[1.522s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/bin'
+[1.522s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib/pkgconfig/wamv_description.pc'
+[1.522s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib/python3.10/site-packages'
+[1.522s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/bin'
+[1.523s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/wamv_description/package.ps1'
+[1.523s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zjh/vrx_ws/install/share/wamv_description/package.dsv'
+[1.523s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/wamv_description/package.sh'
+[1.523s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/wamv_description/package.bash'
+[1.524s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/wamv_description/package.zsh'
+[1.524s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zjh/vrx_ws/install/share/colcon-core/packages/wamv_description)
+[1.541s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wamv_description)
+[1.541s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install' for CMake module files
+[1.542s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install' for CMake config files
+[1.542s] Level 1:colcon.colcon_core.shell:create_environment_hook('wamv_description', 'cmake_prefix_path')
+[1.542s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/wamv_description/hook/cmake_prefix_path.ps1'
+[1.543s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zjh/vrx_ws/install/share/wamv_description/hook/cmake_prefix_path.dsv'
+[1.543s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/wamv_description/hook/cmake_prefix_path.sh'
+[1.543s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib'
+[1.544s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/bin'
+[1.544s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib/pkgconfig/wamv_description.pc'
+[1.544s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib/python3.10/site-packages'
+[1.544s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/bin'
+[1.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/wamv_description/package.ps1'
+[1.545s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zjh/vrx_ws/install/share/wamv_description/package.dsv'
+[1.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/wamv_description/package.sh'
+[1.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/wamv_description/package.bash'
+[1.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/wamv_description/package.zsh'
+[1.546s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zjh/vrx_ws/install/share/colcon-core/packages/wamv_description)
+[1.546s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zjh/vrx_ws/src/vrx/vrx_urdf/wamv_gazebo' with build type 'ament_cmake'
+[1.546s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zjh/vrx_ws/src/vrx/vrx_urdf/wamv_gazebo'
+[1.546s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.546s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.552s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zjh/vrx_ws/build/wamv_gazebo': AMENT_PREFIX_PATH=/home/zjh/vrx_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zjh/vrx_ws/install:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/zjh/vrx_ws/install/share/wamv_description/models:/home/zjh/vrx_ws/install/share/vrx_gazebo/models:/home/zjh/vrx_ws/install/share PYTHONPATH=/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/zjh/vrx_ws/src/vrx/vrx_urdf/wamv_gazebo -DCMAKE_INSTALL_PREFIX=/home/zjh/vrx_ws/install
+[1.927s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zjh/vrx_ws/build/wamv_gazebo' returned '0': AMENT_PREFIX_PATH=/home/zjh/vrx_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zjh/vrx_ws/install:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/zjh/vrx_ws/install/share/wamv_description/models:/home/zjh/vrx_ws/install/share/vrx_gazebo/models:/home/zjh/vrx_ws/install/share PYTHONPATH=/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/zjh/vrx_ws/src/vrx/vrx_urdf/wamv_gazebo -DCMAKE_INSTALL_PREFIX=/home/zjh/vrx_ws/install
+[1.928s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zjh/vrx_ws/build/wamv_gazebo': AMENT_PREFIX_PATH=/home/zjh/vrx_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zjh/vrx_ws/install:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/zjh/vrx_ws/install/share/wamv_description/models:/home/zjh/vrx_ws/install/share/vrx_gazebo/models:/home/zjh/vrx_ws/install/share PYTHONPATH=/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zjh/vrx_ws/build/wamv_gazebo -- -j24 -l24
+[1.953s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zjh/vrx_ws/build/wamv_gazebo' returned '0': AMENT_PREFIX_PATH=/home/zjh/vrx_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zjh/vrx_ws/install:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/zjh/vrx_ws/install/share/wamv_description/models:/home/zjh/vrx_ws/install/share/vrx_gazebo/models:/home/zjh/vrx_ws/install/share PYTHONPATH=/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zjh/vrx_ws/build/wamv_gazebo -- -j24 -l24
+[1.966s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zjh/vrx_ws/build/wamv_gazebo': AMENT_PREFIX_PATH=/home/zjh/vrx_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zjh/vrx_ws/install:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/zjh/vrx_ws/install/share/wamv_description/models:/home/zjh/vrx_ws/install/share/vrx_gazebo/models:/home/zjh/vrx_ws/install/share PYTHONPATH=/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zjh/vrx_ws/build/wamv_gazebo
+[1.971s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wamv_gazebo)
+[1.972s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install' for CMake module files
+[1.972s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install' for CMake config files
+[1.972s] Level 1:colcon.colcon_core.shell:create_environment_hook('wamv_gazebo', 'cmake_prefix_path')
+[1.973s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/wamv_gazebo/hook/cmake_prefix_path.ps1'
+[1.973s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zjh/vrx_ws/install/share/wamv_gazebo/hook/cmake_prefix_path.dsv'
+[1.972s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zjh/vrx_ws/build/wamv_gazebo' returned '0': AMENT_PREFIX_PATH=/home/zjh/vrx_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zjh/vrx_ws/install:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/zjh/vrx_ws/install/share/wamv_description/models:/home/zjh/vrx_ws/install/share/vrx_gazebo/models:/home/zjh/vrx_ws/install/share PYTHONPATH=/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zjh/vrx_ws/build/wamv_gazebo
+[1.973s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/wamv_gazebo/hook/cmake_prefix_path.sh'
+[1.973s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib'
+[1.974s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/bin'
+[1.974s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib/pkgconfig/wamv_gazebo.pc'
+[1.974s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib/python3.10/site-packages'
+[1.974s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/bin'
+[1.974s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/wamv_gazebo/package.ps1'
+[1.974s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zjh/vrx_ws/install/share/wamv_gazebo/package.dsv'
+[1.974s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/wamv_gazebo/package.sh'
+[1.974s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/wamv_gazebo/package.bash'
+[1.975s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/wamv_gazebo/package.zsh'
+[1.975s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zjh/vrx_ws/install/share/colcon-core/packages/wamv_gazebo)
+[1.989s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wamv_gazebo)
+[1.989s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install' for CMake module files
+[1.989s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install' for CMake config files
+[1.989s] Level 1:colcon.colcon_core.shell:create_environment_hook('wamv_gazebo', 'cmake_prefix_path')
+[1.990s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/wamv_gazebo/hook/cmake_prefix_path.ps1'
+[1.990s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zjh/vrx_ws/install/share/wamv_gazebo/hook/cmake_prefix_path.dsv'
+[1.990s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/wamv_gazebo/hook/cmake_prefix_path.sh'
+[1.990s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib'
+[1.990s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/bin'
+[1.990s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib/pkgconfig/wamv_gazebo.pc'
+[1.990s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib/python3.10/site-packages'
+[1.991s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/bin'
+[1.991s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/wamv_gazebo/package.ps1'
+[1.991s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zjh/vrx_ws/install/share/wamv_gazebo/package.dsv'
+[1.991s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/wamv_gazebo/package.sh'
+[1.991s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/wamv_gazebo/package.bash'
+[1.992s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/wamv_gazebo/package.zsh'
+[1.992s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zjh/vrx_ws/install/share/colcon-core/packages/wamv_gazebo)
+[8.154s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zjh/vrx_ws/build/vrx_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zjh/vrx_ws/build/vrx_ros -- -j24 -l24
+[8.171s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zjh/vrx_ws/build/vrx_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zjh/vrx_ws/build/vrx_ros
+[8.182s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrx_ros)
+[8.182s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install' for CMake module files
+[8.183s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zjh/vrx_ws/build/vrx_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zjh/vrx_ws/build/vrx_ros
+[8.183s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install' for CMake config files
+[8.183s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_ros', 'cmake_prefix_path')
+[8.183s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/vrx_ros/hook/cmake_prefix_path.ps1'
+[8.183s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zjh/vrx_ws/install/share/vrx_ros/hook/cmake_prefix_path.dsv'
+[8.183s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/vrx_ros/hook/cmake_prefix_path.sh'
+[8.184s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib'
+[8.184s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/bin'
+[8.184s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib/pkgconfig/vrx_ros.pc'
+[8.184s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib/python3.10/site-packages'
+[8.184s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/bin'
+[8.184s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_ros/package.ps1'
+[8.184s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zjh/vrx_ws/install/share/vrx_ros/package.dsv'
+[8.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_ros/package.sh'
+[8.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_ros/package.bash'
+[8.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_ros/package.zsh'
+[8.185s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zjh/vrx_ws/install/share/colcon-core/packages/vrx_ros)
+[8.206s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrx_ros)
+[8.206s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install' for CMake module files
+[8.207s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install' for CMake config files
+[8.207s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_ros', 'cmake_prefix_path')
+[8.207s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/vrx_ros/hook/cmake_prefix_path.ps1'
+[8.207s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zjh/vrx_ws/install/share/vrx_ros/hook/cmake_prefix_path.dsv'
+[8.207s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/vrx_ros/hook/cmake_prefix_path.sh'
+[8.208s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib'
+[8.208s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/bin'
+[8.208s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib/pkgconfig/vrx_ros.pc'
+[8.208s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib/python3.10/site-packages'
+[8.208s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/bin'
+[8.208s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_ros/package.ps1'
+[8.208s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zjh/vrx_ws/install/share/vrx_ros/package.dsv'
+[8.209s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_ros/package.sh'
+[8.209s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_ros/package.bash'
+[8.209s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_ros/package.zsh'
+[8.209s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zjh/vrx_ws/install/share/colcon-core/packages/vrx_ros)
+[8.209s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zjh/vrx_ws/src/vrx/vrx_gz' with build type 'ament_cmake'
+[8.209s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zjh/vrx_ws/src/vrx/vrx_gz'
+[8.209s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.209s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.213s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zjh/vrx_ws/build/vrx_gz': AMENT_PREFIX_PATH=/home/zjh/vrx_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zjh/vrx_ws/install:/opt/ros/humble /usr/bin/cmake /home/zjh/vrx_ws/src/vrx/vrx_gz -DCMAKE_INSTALL_PREFIX=/home/zjh/vrx_ws/install
+[9.397s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zjh/vrx_ws/build/vrx_gz' returned '0': AMENT_PREFIX_PATH=/home/zjh/vrx_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zjh/vrx_ws/install:/opt/ros/humble /usr/bin/cmake /home/zjh/vrx_ws/src/vrx/vrx_gz -DCMAKE_INSTALL_PREFIX=/home/zjh/vrx_ws/install
+[9.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zjh/vrx_ws/build/vrx_gz': AMENT_PREFIX_PATH=/home/zjh/vrx_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zjh/vrx_ws/install:/opt/ros/humble /usr/bin/cmake --build /home/zjh/vrx_ws/build/vrx_gz -- -j24 -l24
+[19.611s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zjh/vrx_ws/build/vrx_gz' returned '0': AMENT_PREFIX_PATH=/home/zjh/vrx_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zjh/vrx_ws/install:/opt/ros/humble /usr/bin/cmake --build /home/zjh/vrx_ws/build/vrx_gz -- -j24 -l24
+[19.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zjh/vrx_ws/build/vrx_gz': AMENT_PREFIX_PATH=/home/zjh/vrx_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zjh/vrx_ws/install:/opt/ros/humble /usr/bin/cmake --install /home/zjh/vrx_ws/build/vrx_gz
+[19.780s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrx_gz)
+[19.781s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install' for CMake module files
+[19.781s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zjh/vrx_ws/build/vrx_gz' returned '0': AMENT_PREFIX_PATH=/home/zjh/vrx_ws/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zjh/vrx_ws/install:/opt/ros/humble /usr/bin/cmake --install /home/zjh/vrx_ws/build/vrx_gz
+[19.781s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install' for CMake config files
+[19.782s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gz', 'cmake_prefix_path')
+[19.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/vrx_gz/hook/cmake_prefix_path.ps1'
+[19.782s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zjh/vrx_ws/install/share/vrx_gz/hook/cmake_prefix_path.dsv'
+[19.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/vrx_gz/hook/cmake_prefix_path.sh'
+[19.783s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib'
+[19.783s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gz', 'ld_library_path_lib')
+[19.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/vrx_gz/hook/ld_library_path_lib.ps1'
+[19.783s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zjh/vrx_ws/install/share/vrx_gz/hook/ld_library_path_lib.dsv'
+[19.784s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/vrx_gz/hook/ld_library_path_lib.sh'
+[19.784s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/bin'
+[19.784s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib/pkgconfig/vrx_gz.pc'
+[19.784s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib/python3.10/site-packages'
+[19.785s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/bin'
+[19.785s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_gz/package.ps1'
+[19.785s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zjh/vrx_ws/install/share/vrx_gz/package.dsv'
+[19.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_gz/package.sh'
+[19.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_gz/package.bash'
+[19.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_gz/package.zsh'
+[19.787s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zjh/vrx_ws/install/share/colcon-core/packages/vrx_gz)
+[19.855s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrx_gz)
+[19.855s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install' for CMake module files
+[19.856s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install' for CMake config files
+[19.856s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gz', 'cmake_prefix_path')
+[19.856s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/vrx_gz/hook/cmake_prefix_path.ps1'
+[19.857s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zjh/vrx_ws/install/share/vrx_gz/hook/cmake_prefix_path.dsv'
+[19.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/vrx_gz/hook/cmake_prefix_path.sh'
+[19.857s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib'
+[19.857s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gz', 'ld_library_path_lib')
+[19.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/vrx_gz/hook/ld_library_path_lib.ps1'
+[19.857s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zjh/vrx_ws/install/share/vrx_gz/hook/ld_library_path_lib.dsv'
+[19.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zjh/vrx_ws/install/share/vrx_gz/hook/ld_library_path_lib.sh'
+[19.858s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/bin'
+[19.858s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib/pkgconfig/vrx_gz.pc'
+[19.858s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/lib/python3.10/site-packages'
+[19.858s] Level 1:colcon.colcon_core.environment:checking '/home/zjh/vrx_ws/install/bin'
+[19.858s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_gz/package.ps1'
+[19.859s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zjh/vrx_ws/install/share/vrx_gz/package.dsv'
+[19.859s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_gz/package.sh'
+[19.860s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_gz/package.bash'
+[19.860s] INFO:colcon.colcon_core.shell:Creating package script '/home/zjh/vrx_ws/install/share/vrx_gz/package.zsh'
+[19.861s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zjh/vrx_ws/install/share/colcon-core/packages/vrx_gz)
+[19.861s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[19.861s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[19.861s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[19.861s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[19.866s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[19.866s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[19.866s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[19.872s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[19.873s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zjh/vrx_ws/install/local_setup.ps1'
+[19.873s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zjh/vrx_ws/install/_local_setup_util_ps1.py'
+[19.874s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zjh/vrx_ws/install/setup.ps1'
+[19.875s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zjh/vrx_ws/install/local_setup.sh'
+[19.875s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zjh/vrx_ws/install/_local_setup_util_sh.py'
+[19.875s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zjh/vrx_ws/install/setup.sh'
+[19.876s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zjh/vrx_ws/install/local_setup.bash'
+[19.876s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zjh/vrx_ws/install/setup.bash'
+[19.876s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zjh/vrx_ws/install/local_setup.zsh'
+[19.877s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zjh/vrx_ws/install/setup.zsh'

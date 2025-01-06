@@ -1,0 +1,1231 @@
+[0.000000] (-) TimerEvent: {}
+[0.000102] (vrx_gazebo) JobQueued: {'identifier': 'vrx_gazebo', 'dependencies': OrderedDict()}
+[0.000118] (vrx_ros) JobQueued: {'identifier': 'vrx_ros', 'dependencies': OrderedDict()}
+[0.000127] (vrx_gz) JobQueued: {'identifier': 'vrx_gz', 'dependencies': OrderedDict([('vrx_ros', '/home/zjh/vrx_ws/install')])}
+[0.000136] (wamv_description) JobQueued: {'identifier': 'wamv_description', 'dependencies': OrderedDict([('vrx_gazebo', '/home/zjh/vrx_ws/install')])}
+[0.000145] (wamv_gazebo) JobQueued: {'identifier': 'wamv_gazebo', 'dependencies': OrderedDict([('vrx_gazebo', '/home/zjh/vrx_ws/install'), ('wamv_description', '/home/zjh/vrx_ws/install')])}
+[0.000455] (vrx_gazebo) JobStarted: {'identifier': 'vrx_gazebo'}
+[0.003023] (vrx_ros) JobStarted: {'identifier': 'vrx_ros'}
+[0.004656] (vrx_gazebo) JobProgress: {'identifier': 'vrx_gazebo', 'progress': 'cmake'}
+[0.004778] (vrx_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/zjh/vrx_ws/src/vrx/vrx_urdf/vrx_gazebo', '-DCMAKE_INSTALL_PREFIX=/home/zjh/vrx_ws/install'], 'cwd': '/home/zjh/vrx_ws/build/vrx_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zjh'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zjh'), ('OLDPWD', '/home/zjh/vrx_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1242'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zjh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zjh-MS-7D32:@/tmp/.ICE-unix/1214,unix/zjh-MS-7D32:/tmp/.ICE-unix/1214'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/27ad63f3_de5f_4176_8f8c_3fd90c257547'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XCR9W2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.274'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zjh/vrx_ws/build/vrx_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.007954] (vrx_ros) JobProgress: {'identifier': 'vrx_ros', 'progress': 'cmake'}
+[0.008586] (vrx_ros) Command: {'cmd': ['/usr/bin/cmake', '/home/zjh/vrx_ws/src/vrx/vrx_ros', '-DCMAKE_INSTALL_PREFIX=/home/zjh/vrx_ws/install'], 'cwd': '/home/zjh/vrx_ws/build/vrx_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zjh'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zjh'), ('OLDPWD', '/home/zjh/vrx_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1242'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zjh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zjh-MS-7D32:@/tmp/.ICE-unix/1214,unix/zjh-MS-7D32:/tmp/.ICE-unix/1214'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/27ad63f3_de5f_4176_8f8c_3fd90c257547'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XCR9W2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.274'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zjh/vrx_ws/build/vrx_ros'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.037418] (vrx_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.041845] (vrx_ros) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.074982] (vrx_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.078371] (vrx_ros) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.079356] (vrx_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.082484] (vrx_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.100950] (-) TimerEvent: {}
+[0.124348] (vrx_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.125840] (vrx_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.128836] (vrx_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.134793] (vrx_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.134864] (vrx_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.134905] (vrx_ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.134949] (vrx_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.135011] (vrx_ros) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.135049] (vrx_ros) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.135085] (vrx_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.180680] (vrx_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.182732] (vrx_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.183346] (vrx_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.183464] (vrx_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.183712] (vrx_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.184634] (vrx_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.186564] (vrx_ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.186698] (vrx_ros) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.186950] (vrx_ros) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.187887] (vrx_ros) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.201015] (-) TimerEvent: {}
+[0.277281] (vrx_ros) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.280070] (vrx_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.301108] (-) TimerEvent: {}
+[0.326222] (vrx_ros) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.343685] (vrx_ros) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.345753] (vrx_ros) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.349481] (vrx_ros) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.356736] (vrx_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.367783] (vrx_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.389059] (vrx_ros) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.5.1\n'}
+[0.392385] (vrx_ros) StdoutLine: {'line': b'-- Searching for dependencies of gz-msgs9\n'}
+[0.401180] (-) TimerEvent: {}
+[0.421397] (vrx_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.422653] (vrx_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[0.423069] (vrx_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /home/zjh/vrx_ws/build/vrx_gazebo\n'}
+[0.425206] (vrx_gazebo) CommandEnded: {'returncode': 0}
+[0.426163] (vrx_gazebo) JobProgress: {'identifier': 'vrx_gazebo', 'progress': 'build'}
+[0.426227] (vrx_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zjh/vrx_ws/build/vrx_gazebo', '--', '-j24', '-l24'], 'cwd': '/home/zjh/vrx_ws/build/vrx_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zjh'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zjh'), ('OLDPWD', '/home/zjh/vrx_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1242'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zjh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zjh-MS-7D32:@/tmp/.ICE-unix/1214,unix/zjh-MS-7D32:/tmp/.ICE-unix/1214'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/27ad63f3_de5f_4176_8f8c_3fd90c257547'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XCR9W2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.274'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zjh/vrx_ws/build/vrx_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.462524] (vrx_gazebo) StdoutLine: {'line': b'Built target ament_cmake_python_copy_vrx_gazebo\n'}
+[0.496295] (vrx_ros) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[0.497881] (vrx_ros) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[0.498112] (vrx_ros) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[0.499174] (vrx_ros) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[0.499401] (vrx_ros) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[0.501228] (-) TimerEvent: {}
+[0.503567] (vrx_ros) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[0.511439] (vrx_ros) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[0.531980] (vrx_ros) StdoutLine: {'line': b'-- Looking for gz-transport12 -- found version 12.2.2\n'}
+[0.532148] (vrx_ros) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport12\n'}
+[0.549705] (vrx_ros) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[0.551605] (vrx_ros) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[0.559558] (vrx_ros) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[0.581111] (vrx_ros) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[0.585537] (vrx_ros) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[0.589512] (vrx_gazebo) StdoutLine: {'line': b'running egg_info\n'}
+[0.589984] (vrx_gazebo) StdoutLine: {'line': b'creating vrx_gazebo.egg-info\n'}
+[0.590109] (vrx_gazebo) StdoutLine: {'line': b'writing vrx_gazebo.egg-info/PKG-INFO\n'}
+[0.590220] (vrx_gazebo) StdoutLine: {'line': b'writing dependency_links to vrx_gazebo.egg-info/dependency_links.txt\n'}
+[0.590307] (vrx_gazebo) StdoutLine: {'line': b'writing top-level names to vrx_gazebo.egg-info/top_level.txt\n'}
+[0.590439] (vrx_gazebo) StdoutLine: {'line': b"writing manifest file 'vrx_gazebo.egg-info/SOURCES.txt'\n"}
+[0.591752] (vrx_gazebo) StdoutLine: {'line': b"reading manifest file 'vrx_gazebo.egg-info/SOURCES.txt'\n"}
+[0.592020] (vrx_gazebo) StdoutLine: {'line': b"writing manifest file 'vrx_gazebo.egg-info/SOURCES.txt'\n"}
+[0.593384] (vrx_ros) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[0.601326] (-) TimerEvent: {}
+[0.607903] (vrx_gazebo) StdoutLine: {'line': b'Built target ament_cmake_python_build_vrx_gazebo_egg\n'}
+[0.613391] (vrx_ros) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[0.613747] (vrx_ros) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[0.613884] (vrx_gazebo) CommandEnded: {'returncode': 0}
+[0.614162] (vrx_ros) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[0.614199] (vrx_ros) StdoutLine: {'line': b'-- Searching for <gz-utils2> component [cli]\n'}
+[0.614716] (vrx_ros) StdoutLine: {'line': b'-- Looking for gz-utils2-cli -- found version 2.2.0\n'}
+[0.614956] (vrx_ros) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2-cli\n'}
+[0.615383] (vrx_ros) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.5.1\n'}
+[0.616230] (vrx_ros) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.629478] (vrx_gazebo) JobProgress: {'identifier': 'vrx_gazebo', 'progress': 'install'}
+[0.636537] (vrx_ros) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.636890] (vrx_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zjh/vrx_ws/build/vrx_gazebo'], 'cwd': '/home/zjh/vrx_ws/build/vrx_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zjh'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zjh'), ('OLDPWD', '/home/zjh/vrx_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1242'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zjh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zjh-MS-7D32:@/tmp/.ICE-unix/1214,unix/zjh-MS-7D32:/tmp/.ICE-unix/1214'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/27ad63f3_de5f_4176_8f8c_3fd90c257547'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XCR9W2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.274'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zjh/vrx_ws/build/vrx_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.637216] (vrx_ros) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.642438] (vrx_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.642520] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/environment/resource_paths.dsv\n'}
+[0.642565] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/environment/resource_paths.sh\n'}
+[0.642590] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models\n'}
+[0.642629] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/sensor_post\n'}
+[0.642652] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/sensor_post/mesh\n'}
+[0.642675] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/sensor_post/mesh/sensor_post_arm.dae\n'}
+[0.642709] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/sensor_post/mesh/sensor_post.png\n'}
+[0.642849] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/sensor_post/mesh/sensor_post.dae\n'}
+[0.642891] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/sensor_post/model.sdf\n'}
+[0.642922] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/sensor_post/model.config\n'}
+[0.642952] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/cpu_cases\n'}
+[0.642985] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/cpu_cases/mesh\n'}
+[0.643018] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/cpu_cases/mesh/cpu_cases_Albedo.png\n'}
+[0.644673] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/cpu_cases/mesh/cpu_cases_Roughness.png\n'}
+[0.645599] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/cpu_cases/mesh/cpu_cases_Normal.png\n'}
+[0.647505] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/cpu_cases/mesh/cpu_cases.png\n'}
+[0.649574] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/cpu_cases/mesh/cpu_cases_Metalness.png\n'}
+[0.649621] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/cpu_cases/mesh/cpu_cases.dae\n'}
+[0.649715] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/cpu_cases/model.sdf\n'}
+[0.649744] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/cpu_cases/model.config\n'}
+[0.649775] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/battery\n'}
+[0.649815] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/battery/mesh\n'}
+[0.649848] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/battery/mesh/battery_Normal.png\n'}
+[0.651624] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/battery/mesh/battery.dae\n'}
+[0.651669] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/battery/mesh/battery_Metalness.png\n'}
+[0.651700] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/battery/mesh/battery.png\n'}
+[0.653748] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/battery/mesh/battery_Albedo.png\n'}
+[0.655718] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/battery/mesh/battery_Roughness.png\n'}
+[0.656853] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/battery/model.sdf\n'}
+[0.656967] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/battery/model.config\n'}
+[0.657019] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/blue_projectile\n'}
+[0.657062] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/blue_projectile/model.sdf\n'}
+[0.657128] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/blue_projectile/model.config\n'}
+[0.657163] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/ball_shooter\n'}
+[0.657197] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/ball_shooter/model.sdf\n'}
+[0.657230] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/ball_shooter/meshes\n'}
+[0.657261] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/ball_shooter/meshes/Launcher_Albedo.png\n'}
+[0.657469] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/ball_shooter/meshes/ball_shooter_base.dae\n'}
+[0.657510] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/ball_shooter/meshes/Glass_BaseColor.png\n'}
+[0.657532] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/ball_shooter/meshes/Launcher_BaseColor.png\n'}
+[0.658063] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/ball_shooter/meshes/ball_shooter_launcher.dae\n'}
+[0.658228] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/ball_shooter/model.config\n'}
+[0.658267] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/ball_shooter/materials\n'}
+[0.658290] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/ball_shooter/materials/Textures\n'}
+[0.658322] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/ball_shooter/materials/Textures/Launcher_Roughness.png\n'}
+[0.658442] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/ball_shooter/materials/Textures/Launcher_Albedo.png\n'}
+[0.661808] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/ball_shooter/materials/Textures/Launcher_Metalness.png\n'}
+[0.661995] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/ball_shooter/materials/Textures/Launcher_Normal.png\n'}
+[0.662073] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/3d_lidar\n'}
+[0.662115] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/3d_lidar/mesh\n'}
+[0.662154] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/3d_lidar/mesh/3d_Lidar_Normal.png\n'}
+[0.662191] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/3d_lidar/mesh/3d_Lidar_Roughness.png\n'}
+[0.662227] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/3d_lidar/mesh/3d_Lidar_Albedo.png\n'}
+[0.662263] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/3d_lidar/mesh/3d_lidar.png\n'}
+[0.662298] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/3d_lidar/mesh/3d_lidar.dae\n'}
+[0.662339] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/3d_lidar/mesh/3d_Lidar_Metalness.png\n'}
+[0.662373] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/3d_lidar/model.sdf\n'}
+[0.662409] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/3d_lidar/model.config\n'}
+[0.662444] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/mono_camera\n'}
+[0.662478] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/mono_camera/mesh\n'}
+[0.662554] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/mono_camera/mesh/mono_camera_Metalness.png\n'}
+[0.662593] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/mono_camera/mesh/mono_camera.dae\n'}
+[0.662630] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/mono_camera/mesh/mono_camera_Roughness.png\n'}
+[0.662667] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/mono_camera/mesh/mono_camera_Normal.png\n'}
+[0.662703] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/mono_camera/mesh/mono_camera_Albedo.png\n'}
+[0.662739] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/mono_camera/mesh/mono_camera.png\n'}
+[0.662775] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/mono_camera/model.sdf\n'}
+[0.662826] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/models/mono_camera/model.config\n'}
+[0.662862] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/launch\n'}
+[0.662896] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/launch/generate_wamv.launch.py\n'}
+[0.662932] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/launch/rviz.launch.py\n'}
+[0.662968] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/config\n'}
+[0.663003] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/config/wamv_config\n'}
+[0.663037] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/config/wamv_config/component_compliance\n'}
+[0.663071] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/config/wamv_config/component_compliance/numeric.yaml\n'}
+[0.663105] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/config/wamv_config/component_compliance/bounding_boxes.yaml\n'}
+[0.663143] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/config/wamv_config/example_component_config.yaml\n'}
+[0.663177] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/config/wamv_config/thruster_compliance\n'}
+[0.663210] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/config/wamv_config/thruster_compliance/numeric.yaml\n'}
+[0.663244] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/config/wamv_config/thruster_compliance/bounding_boxes.yaml\n'}
+[0.663277] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/config/wamv_config/example_thruster_config.yaml\n'}
+[0.663310] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/config/rviz_vrx_rsp.rviz\n'}
+[0.663344] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/config/rviz_vrx_final.rviz\n'}
+[0.663377] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/vrx_gazebo/generate_wamv.py\n'}
+[0.663412] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/environment/pythonpath.sh\n'}
+[0.663445] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/environment/pythonpath.dsv\n'}
+[0.663479] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gazebo-1.3.0-py3.10.egg-info\n'}
+[0.663515] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gazebo-1.3.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.663550] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gazebo-1.3.0-py3.10.egg-info/top_level.txt\n'}
+[0.663585] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gazebo-1.3.0-py3.10.egg-info/PKG-INFO\n'}
+[0.663618] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gazebo-1.3.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.663653] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gazebo\n'}
+[0.663687] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gazebo/configure_wamv.py\n'}
+[0.663721] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gazebo/__init__.py\n'}
+[0.663754] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gazebo/utils.py\n'}
+[0.663830] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gazebo/compliance.py\n'}
+[0.682240] (vrx_gazebo) StdoutLine: {'line': b"Listing '/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gazebo'...\n"}
+[0.682394] (vrx_gazebo) StdoutLine: {'line': b"Compiling '/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gazebo/__init__.py'...\n"}
+[0.682461] (vrx_gazebo) StdoutLine: {'line': b"Compiling '/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gazebo/compliance.py'...\n"}
+[0.682520] (vrx_gazebo) StdoutLine: {'line': b"Compiling '/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gazebo/configure_wamv.py'...\n"}
+[0.682579] (vrx_gazebo) StdoutLine: {'line': b"Compiling '/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gazebo/utils.py'...\n"}
+[0.684947] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/ament_index/resource_index/package_run_dependencies/vrx_gazebo\n'}
+[0.685083] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/ament_index/resource_index/parent_prefix_path/vrx_gazebo\n'}
+[0.685153] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/environment/ament_prefix_path.sh\n'}
+[0.685233] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/environment/ament_prefix_path.dsv\n'}
+[0.685335] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/environment/path.sh\n'}
+[0.685393] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/environment/path.dsv\n'}
+[0.685451] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/local_setup.bash\n'}
+[0.685508] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/local_setup.sh\n'}
+[0.685563] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/local_setup.zsh\n'}
+[0.685619] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/local_setup.dsv\n'}
+[0.685674] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/package.dsv\n'}
+[0.685751] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/ament_index/resource_index/packages/vrx_gazebo\n'}
+[0.685811] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/cmake/vrx_gazeboConfig.cmake\n'}
+[0.685866] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/cmake/vrx_gazeboConfig-version.cmake\n'}
+[0.685917] (vrx_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gazebo/package.xml\n'}
+[0.686585] (vrx_gazebo) CommandEnded: {'returncode': 0}
+[0.688081] (vrx_ros) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.701417] (-) TimerEvent: {}
+[0.703369] (vrx_ros) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.709949] (vrx_gazebo) JobEnded: {'identifier': 'vrx_gazebo', 'rc': 0}
+[0.710476] (wamv_description) JobStarted: {'identifier': 'wamv_description'}
+[0.713143] (wamv_description) JobProgress: {'identifier': 'wamv_description', 'progress': 'cmake'}
+[0.713317] (wamv_description) Command: {'cmd': ['/usr/bin/cmake', '/home/zjh/vrx_ws/src/vrx/vrx_urdf/wamv_description', '-DCMAKE_INSTALL_PREFIX=/home/zjh/vrx_ws/install'], 'cwd': '/home/zjh/vrx_ws/build/wamv_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zjh'), ('GZ_SIM_RESOURCE_PATH', '/home/zjh/vrx_ws/install/share/vrx_gazebo/models:/home/zjh/vrx_ws/install/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zjh'), ('OLDPWD', '/home/zjh/vrx_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1242'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zjh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zjh-MS-7D32:@/tmp/.ICE-unix/1214,unix/zjh-MS-7D32:/tmp/.ICE-unix/1214'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/27ad63f3_de5f_4176_8f8c_3fd90c257547'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XCR9W2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.274'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zjh/vrx_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zjh/vrx_ws/build/wamv_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zjh/vrx_ws/install:/opt/ros/humble')]), 'shell': False}
+[0.729554] (vrx_ros) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.733431] (vrx_ros) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.753813] (wamv_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.756832] (vrx_ros) StdoutLine: {'line': b'-- Found ros_gz_interfaces: 0.244.11 (/opt/ros/humble/share/ros_gz_interfaces/cmake)\n'}
+[0.768142] (vrx_ros) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.776739] (vrx_ros) StdoutLine: {'line': b'-- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.782120] (vrx_ros) StdoutLine: {'line': b'-- Found tf2_msgs: 0.25.8 (/opt/ros/humble/share/tf2_msgs/cmake)\n'}
+[0.785269] (wamv_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.788975] (wamv_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.801504] (-) TimerEvent: {}
+[0.808764] (vrx_ros) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.839575] (wamv_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.843345] (wamv_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.843418] (wamv_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.843622] (wamv_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.845185] (wamv_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.871757] (vrx_ros) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.878662] (vrx_ros) StdoutLine: {'line': b'-- Generating done\n'}
+[0.879611] (vrx_ros) StdoutLine: {'line': b'-- Build files have been written to: /home/zjh/vrx_ws/build/vrx_ros\n'}
+[0.885887] (vrx_ros) CommandEnded: {'returncode': 0}
+[0.886167] (vrx_ros) JobProgress: {'identifier': 'vrx_ros', 'progress': 'build'}
+[0.886394] (vrx_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zjh/vrx_ws/build/vrx_ros', '--', '-j24', '-l24'], 'cwd': '/home/zjh/vrx_ws/build/vrx_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zjh'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zjh'), ('OLDPWD', '/home/zjh/vrx_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1242'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zjh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zjh-MS-7D32:@/tmp/.ICE-unix/1214,unix/zjh-MS-7D32:/tmp/.ICE-unix/1214'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/27ad63f3_de5f_4176_8f8c_3fd90c257547'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XCR9W2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.274'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zjh/vrx_ws/build/vrx_ros'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.899556] (wamv_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.901602] (-) TimerEvent: {}
+[0.903388] (wamv_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.903498] (wamv_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.903747] (wamv_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.904726] (wamv_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.919335] (vrx_ros) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/pose_tf_broadcaster.dir/src/pose_tf_broadcaster.cc.o\x1b[0m\n'}
+[0.919496] (vrx_ros) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/optical_frame_publisher.dir/src/optical_frame_publisher.cc.o\x1b[0m\n'}
+[0.999431] (wamv_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.003185] (-) TimerEvent: {}
+[1.053984] (wamv_description) StdoutLine: {'line': b'-- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)\n'}
+[1.054428] (wamv_description) StdoutLine: {'line': b'-- xacro: determining deps for: urdf/wamv_base.urdf.xacro ...\n'}
+[1.103293] (-) TimerEvent: {}
+[1.156147] (wamv_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.157461] (wamv_description) StdoutLine: {'line': b'-- Generating done\n'}
+[1.158029] (wamv_description) StdoutLine: {'line': b'-- Build files have been written to: /home/zjh/vrx_ws/build/wamv_description\n'}
+[1.160408] (wamv_description) CommandEnded: {'returncode': 0}
+[1.160835] (wamv_description) JobProgress: {'identifier': 'wamv_description', 'progress': 'build'}
+[1.161015] (wamv_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zjh/vrx_ws/build/wamv_description', '--', '-j24', '-l24'], 'cwd': '/home/zjh/vrx_ws/build/wamv_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zjh'), ('GZ_SIM_RESOURCE_PATH', '/home/zjh/vrx_ws/install/share/vrx_gazebo/models:/home/zjh/vrx_ws/install/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zjh'), ('OLDPWD', '/home/zjh/vrx_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1242'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zjh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zjh-MS-7D32:@/tmp/.ICE-unix/1214,unix/zjh-MS-7D32:/tmp/.ICE-unix/1214'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/27ad63f3_de5f_4176_8f8c_3fd90c257547'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XCR9W2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.274'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zjh/vrx_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zjh/vrx_ws/build/wamv_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zjh/vrx_ws/install:/opt/ros/humble')]), 'shell': False}
+[1.192282] (wamv_description) StdoutLine: {'line': b'[100%] \x1b[34m\x1b[1mxacro: generating urdf/wamv_base.urdf from urdf/wamv_base.urdf.xacro\x1b[0m\n'}
+[1.203391] (-) TimerEvent: {}
+[1.268284] (wamv_description) StdoutLine: {'line': b'[100%] Built target wamv_description__xacro_auto_generate\n'}
+[1.275916] (wamv_description) CommandEnded: {'returncode': 0}
+[1.293229] (wamv_description) JobProgress: {'identifier': 'wamv_description', 'progress': 'install'}
+[1.293494] (wamv_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zjh/vrx_ws/build/wamv_description'], 'cwd': '/home/zjh/vrx_ws/build/wamv_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zjh'), ('GZ_SIM_RESOURCE_PATH', '/home/zjh/vrx_ws/install/share/vrx_gazebo/models:/home/zjh/vrx_ws/install/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zjh'), ('OLDPWD', '/home/zjh/vrx_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1242'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zjh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zjh-MS-7D32:@/tmp/.ICE-unix/1214,unix/zjh-MS-7D32:/tmp/.ICE-unix/1214'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/27ad63f3_de5f_4176_8f8c_3fd90c257547'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XCR9W2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.274'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zjh/vrx_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zjh/vrx_ws/build/wamv_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zjh/vrx_ws/install:/opt/ros/humble')]), 'shell': False}
+[1.298235] (wamv_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.298350] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/environment/resource_paths.dsv\n'}
+[1.298382] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/environment/resource_paths.sh\n'}
+[1.298422] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/urdf/wamv_base.urdf\n'}
+[1.298467] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/models\n'}
+[1.298490] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/models/engine\n'}
+[1.298519] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/models/engine/mesh\n'}
+[1.298542] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/models/engine/mesh/engine.dae\n'}
+[1.298565] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/models/engine/model.config\n'}
+[1.298599] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/models/propeller\n'}
+[1.298639] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/models/propeller/mesh\n'}
+[1.298663] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/models/propeller/mesh/propeller.dae\n'}
+[1.298686] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/models/propeller/model.config\n'}
+[1.298707] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/models/WAM-V-Base\n'}
+[1.298738] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/models/WAM-V-Base/mesh\n'}
+[1.298772] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/models/WAM-V-Base/mesh/WAM-V-Base.dae\n'}
+[1.299078] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/models/WAM-V-Base/mesh/WamV.png\n'}
+[1.299873] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/models/WAM-V-Base/mesh/WAM-V_Normal.png\n'}
+[1.303670] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/models/WAM-V-Base/mesh/WAM-V_Albedo.png\n'}
+[1.303760] (-) TimerEvent: {}
+[1.305092] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/models/WAM-V-Base/mesh/WAM-V_Metalness.png\n'}
+[1.305182] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/models/WAM-V-Base/mesh/WAM-V_Roughness.png\n'}
+[1.306869] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/models/WAM-V-Base/model.config\n'}
+[1.307020] (wamv_description) StdoutLine: {'line': b'-- Up-to-date: /home/zjh/vrx_ws/install/share/wamv_description/urdf\n'}
+[1.307108] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/urdf/thrusters\n'}
+[1.307193] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/urdf/thrusters/engine.xacro\n'}
+[1.307257] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/urdf/battery.xacro\n'}
+[1.307334] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/urdf/wamv_base.urdf.xacro\n'}
+[1.307394] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/urdf/cpu_cases.xacro\n'}
+[1.307471] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/ament_index/resource_index/package_run_dependencies/wamv_description\n'}
+[1.307555] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/ament_index/resource_index/parent_prefix_path/wamv_description\n'}
+[1.307661] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/environment/ament_prefix_path.sh\n'}
+[1.307756] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/environment/ament_prefix_path.dsv\n'}
+[1.307857] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/environment/path.sh\n'}
+[1.307947] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/environment/path.dsv\n'}
+[1.308038] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/local_setup.bash\n'}
+[1.308128] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/local_setup.sh\n'}
+[1.308225] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/local_setup.zsh\n'}
+[1.308312] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/local_setup.dsv\n'}
+[1.308411] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/package.dsv\n'}
+[1.308500] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/ament_index/resource_index/packages/wamv_description\n'}
+[1.308622] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/cmake/wamv_descriptionConfig.cmake\n'}
+[1.308702] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/cmake/wamv_descriptionConfig-version.cmake\n'}
+[1.308790] (wamv_description) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_description/package.xml\n'}
+[1.310128] (wamv_description) CommandEnded: {'returncode': 0}
+[1.337491] (wamv_description) JobEnded: {'identifier': 'wamv_description', 'rc': 0}
+[1.337919] (wamv_gazebo) JobStarted: {'identifier': 'wamv_gazebo'}
+[1.341470] (wamv_gazebo) JobProgress: {'identifier': 'wamv_gazebo', 'progress': 'cmake'}
+[1.341668] (wamv_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/zjh/vrx_ws/src/vrx/vrx_urdf/wamv_gazebo', '-DCMAKE_INSTALL_PREFIX=/home/zjh/vrx_ws/install'], 'cwd': '/home/zjh/vrx_ws/build/wamv_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zjh'), ('GZ_SIM_RESOURCE_PATH', '/home/zjh/vrx_ws/install/share/wamv_description/models:/home/zjh/vrx_ws/install/share/vrx_gazebo/models:/home/zjh/vrx_ws/install/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zjh'), ('OLDPWD', '/home/zjh/vrx_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1242'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zjh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zjh-MS-7D32:@/tmp/.ICE-unix/1214,unix/zjh-MS-7D32:/tmp/.ICE-unix/1214'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/27ad63f3_de5f_4176_8f8c_3fd90c257547'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XCR9W2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.274'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zjh/vrx_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zjh/vrx_ws/build/wamv_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zjh/vrx_ws/install:/opt/ros/humble')]), 'shell': False}
+[1.378678] (wamv_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.403939] (-) TimerEvent: {}
+[1.410528] (wamv_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.415187] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.462839] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.466579] (wamv_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.466701] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.466915] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.468484] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.504020] (-) TimerEvent: {}
+[1.519610] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.523484] (wamv_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.523578] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.523830] (wamv_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.524818] (wamv_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.604107] (-) TimerEvent: {}
+[1.618349] (wamv_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.672876] (wamv_gazebo) StdoutLine: {'line': b'-- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)\n'}
+[1.673017] (wamv_gazebo) StdoutLine: {'line': b'-- Found wamv_description: 1.3.0 (/home/zjh/vrx_ws/install/share/wamv_description/cmake)\n'}
+[1.704184] (-) TimerEvent: {}
+[1.709957] (wamv_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.714322] (wamv_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[1.714443] (wamv_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /home/zjh/vrx_ws/build/wamv_gazebo\n'}
+[1.717176] (wamv_gazebo) CommandEnded: {'returncode': 0}
+[1.717507] (wamv_gazebo) JobProgress: {'identifier': 'wamv_gazebo', 'progress': 'build'}
+[1.717716] (wamv_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zjh/vrx_ws/build/wamv_gazebo', '--', '-j24', '-l24'], 'cwd': '/home/zjh/vrx_ws/build/wamv_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zjh'), ('GZ_SIM_RESOURCE_PATH', '/home/zjh/vrx_ws/install/share/wamv_description/models:/home/zjh/vrx_ws/install/share/vrx_gazebo/models:/home/zjh/vrx_ws/install/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zjh'), ('OLDPWD', '/home/zjh/vrx_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1242'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zjh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zjh-MS-7D32:@/tmp/.ICE-unix/1214,unix/zjh-MS-7D32:/tmp/.ICE-unix/1214'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/27ad63f3_de5f_4176_8f8c_3fd90c257547'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XCR9W2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.274'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zjh/vrx_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zjh/vrx_ws/build/wamv_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zjh/vrx_ws/install:/opt/ros/humble')]), 'shell': False}
+[1.743022] (wamv_gazebo) CommandEnded: {'returncode': 0}
+[1.755185] (wamv_gazebo) JobProgress: {'identifier': 'wamv_gazebo', 'progress': 'install'}
+[1.755323] (wamv_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zjh/vrx_ws/build/wamv_gazebo'], 'cwd': '/home/zjh/vrx_ws/build/wamv_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zjh'), ('GZ_SIM_RESOURCE_PATH', '/home/zjh/vrx_ws/install/share/wamv_description/models:/home/zjh/vrx_ws/install/share/vrx_gazebo/models:/home/zjh/vrx_ws/install/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zjh'), ('OLDPWD', '/home/zjh/vrx_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1242'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zjh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zjh-MS-7D32:@/tmp/.ICE-unix/1214,unix/zjh-MS-7D32:/tmp/.ICE-unix/1214'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/27ad63f3_de5f_4176_8f8c_3fd90c257547'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XCR9W2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.274'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zjh/vrx_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zjh/vrx_ws/build/wamv_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zjh/vrx_ws/install:/opt/ros/humble')]), 'shell': False}
+[1.759308] (wamv_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.759383] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/models\n'}
+[1.759411] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/models/gps\n'}
+[1.759438] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/models/gps/mesh\n'}
+[1.759475] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/models/gps/mesh/gps.png\n'}
+[1.759584] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/models/gps/mesh/gps.dae\n'}
+[1.759660] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/models/gps/model.config\n'}
+[1.759713] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf\n'}
+[1.759755] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf/macros.xacro\n'}
+[1.759792] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf/wamv_gazebo.xacro\n'}
+[1.759826] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf/dynamics\n'}
+[1.759860] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf/dynamics/wamv_gazebo_dynamics_plugin.xacro\n'}
+[1.759894] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf/components\n'}
+[1.759930] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf/components/wamv_imu.xacro\n'}
+[1.759956] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf/components/wamv_camera.xacro\n'}
+[1.759988] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf/components/lidar.xacro\n'}
+[1.760028] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf/components/wamv_3d_lidar.xacro\n'}
+[1.760051] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf/components/wamv_gps.xacro\n'}
+[1.760073] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf/components/wamv_planar_lidar.xacro\n'}
+[1.760106] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf/components/wamv_p3d.xacro\n'}
+[1.760149] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf/components/wamv_pinger.xacro\n'}
+[1.760172] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf/components/ball_shooter.xacro\n'}
+[1.760195] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf/thruster_layouts\n'}
+[1.760217] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf/thruster_layouts/wamv_gazebo_thruster_config.xacro\n'}
+[1.760249] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf/thruster_layouts/wamv_aft_thrusters.xacro\n'}
+[1.760289] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf/thruster_layouts/wamv_x_thrusters.xacro\n'}
+[1.760312] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf/thruster_layouts/wamv_t_thrusters.xacro\n'}
+[1.760337] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/urdf/wamv_gazebo.urdf.xacro\n'}
+[1.760370] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/ament_index/resource_index/package_run_dependencies/wamv_gazebo\n'}
+[1.760431] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/ament_index/resource_index/parent_prefix_path/wamv_gazebo\n'}
+[1.760464] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/environment/ament_prefix_path.sh\n'}
+[1.760499] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/environment/ament_prefix_path.dsv\n'}
+[1.760522] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/environment/path.sh\n'}
+[1.760557] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/environment/path.dsv\n'}
+[1.760581] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/local_setup.bash\n'}
+[1.760616] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/local_setup.sh\n'}
+[1.760639] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/local_setup.zsh\n'}
+[1.760671] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/local_setup.dsv\n'}
+[1.760704] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/package.dsv\n'}
+[1.760737] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/ament_index/resource_index/packages/wamv_gazebo\n'}
+[1.760767] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/cmake/wamv_gazeboConfig.cmake\n'}
+[1.760806] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/cmake/wamv_gazeboConfig-version.cmake\n'}
+[1.760836] (wamv_gazebo) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/wamv_gazebo/package.xml\n'}
+[1.761690] (wamv_gazebo) CommandEnded: {'returncode': 0}
+[1.782266] (wamv_gazebo) JobEnded: {'identifier': 'wamv_gazebo', 'rc': 0}
+[1.804297] (-) TimerEvent: {}
+[1.904515] (-) TimerEvent: {}
+[2.005823] (-) TimerEvent: {}
+[2.106068] (-) TimerEvent: {}
+[2.206286] (-) TimerEvent: {}
+[2.306551] (-) TimerEvent: {}
+[2.406770] (-) TimerEvent: {}
+[2.507006] (-) TimerEvent: {}
+[2.607299] (-) TimerEvent: {}
+[2.707508] (-) TimerEvent: {}
+[2.807836] (-) TimerEvent: {}
+[2.910912] (-) TimerEvent: {}
+[3.011147] (-) TimerEvent: {}
+[3.111374] (-) TimerEvent: {}
+[3.211588] (-) TimerEvent: {}
+[3.311835] (-) TimerEvent: {}
+[3.412058] (-) TimerEvent: {}
+[3.512401] (-) TimerEvent: {}
+[3.612639] (-) TimerEvent: {}
+[3.715830] (-) TimerEvent: {}
+[3.816084] (-) TimerEvent: {}
+[3.919219] (-) TimerEvent: {}
+[4.020884] (-) TimerEvent: {}
+[4.121093] (-) TimerEvent: {}
+[4.221374] (-) TimerEvent: {}
+[4.321588] (-) TimerEvent: {}
+[4.421829] (-) TimerEvent: {}
+[4.522070] (-) TimerEvent: {}
+[4.622294] (-) TimerEvent: {}
+[4.722509] (-) TimerEvent: {}
+[4.823113] (-) TimerEvent: {}
+[4.923351] (-) TimerEvent: {}
+[5.023556] (-) TimerEvent: {}
+[5.124828] (-) TimerEvent: {}
+[5.225060] (-) TimerEvent: {}
+[5.325296] (-) TimerEvent: {}
+[5.425526] (-) TimerEvent: {}
+[5.525810] (-) TimerEvent: {}
+[5.626844] (-) TimerEvent: {}
+[5.632227] (vrx_ros) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable pose_tf_broadcaster\x1b[0m\n'}
+[5.726925] (-) TimerEvent: {}
+[5.827135] (-) TimerEvent: {}
+[5.879619] (vrx_ros) StdoutLine: {'line': b'[ 75%] Built target pose_tf_broadcaster\n'}
+[5.927230] (-) TimerEvent: {}
+[6.027477] (-) TimerEvent: {}
+[6.128997] (-) TimerEvent: {}
+[6.229299] (-) TimerEvent: {}
+[6.329503] (-) TimerEvent: {}
+[6.429724] (-) TimerEvent: {}
+[6.529960] (-) TimerEvent: {}
+[6.630199] (-) TimerEvent: {}
+[6.730434] (-) TimerEvent: {}
+[6.830673] (-) TimerEvent: {}
+[6.931583] (-) TimerEvent: {}
+[7.031847] (-) TimerEvent: {}
+[7.134260] (-) TimerEvent: {}
+[7.234498] (-) TimerEvent: {}
+[7.334718] (-) TimerEvent: {}
+[7.434964] (-) TimerEvent: {}
+[7.536491] (-) TimerEvent: {}
+[7.589080] (vrx_ros) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable optical_frame_publisher\x1b[0m\n'}
+[7.636589] (-) TimerEvent: {}
+[7.736856] (-) TimerEvent: {}
+[7.837088] (-) TimerEvent: {}
+[7.932834] (vrx_ros) StdoutLine: {'line': b'[100%] Built target optical_frame_publisher\n'}
+[7.937175] (-) TimerEvent: {}
+[7.943572] (vrx_ros) CommandEnded: {'returncode': 0}
+[7.960592] (vrx_ros) JobProgress: {'identifier': 'vrx_ros', 'progress': 'install'}
+[7.960761] (vrx_ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zjh/vrx_ws/build/vrx_ros'], 'cwd': '/home/zjh/vrx_ws/build/vrx_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zjh'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zjh'), ('OLDPWD', '/home/zjh/vrx_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1242'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zjh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zjh-MS-7D32:@/tmp/.ICE-unix/1214,unix/zjh-MS-7D32:/tmp/.ICE-unix/1214'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/27ad63f3_de5f_4176_8f8c_3fd90c257547'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XCR9W2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.274'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zjh/vrx_ws/build/vrx_ros'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[7.965554] (vrx_ros) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.965670] (vrx_ros) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/vrx_ros/optical_frame_publisher\n'}
+[7.970198] (vrx_ros) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/vrx_ros/optical_frame_publisher" to ""\n'}
+[7.970309] (vrx_ros) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/vrx_ros/pose_tf_broadcaster\n'}
+[7.970947] (vrx_ros) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/vrx_ros/pose_tf_broadcaster" to ""\n'}
+[7.970992] (vrx_ros) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_ros/launch\n'}
+[7.971036] (vrx_ros) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_ros/launch/monitor_sim.py\n'}
+[7.971075] (vrx_ros) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/ament_index/resource_index/package_run_dependencies/vrx_ros\n'}
+[7.971109] (vrx_ros) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/ament_index/resource_index/parent_prefix_path/vrx_ros\n'}
+[7.971150] (vrx_ros) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_ros/environment/ament_prefix_path.sh\n'}
+[7.971186] (vrx_ros) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_ros/environment/ament_prefix_path.dsv\n'}
+[7.971222] (vrx_ros) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_ros/environment/path.sh\n'}
+[7.971258] (vrx_ros) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_ros/environment/path.dsv\n'}
+[7.971293] (vrx_ros) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_ros/local_setup.bash\n'}
+[7.971333] (vrx_ros) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_ros/local_setup.sh\n'}
+[7.971369] (vrx_ros) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_ros/local_setup.zsh\n'}
+[7.971402] (vrx_ros) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_ros/local_setup.dsv\n'}
+[7.971437] (vrx_ros) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_ros/package.dsv\n'}
+[7.971473] (vrx_ros) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/ament_index/resource_index/packages/vrx_ros\n'}
+[7.971520] (vrx_ros) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_ros/cmake/vrx_rosConfig.cmake\n'}
+[7.971554] (vrx_ros) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_ros/cmake/vrx_rosConfig-version.cmake\n'}
+[7.971588] (vrx_ros) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_ros/package.xml\n'}
+[7.972609] (vrx_ros) CommandEnded: {'returncode': 0}
+[7.999717] (vrx_ros) JobEnded: {'identifier': 'vrx_ros', 'rc': 0}
+[8.000040] (vrx_gz) JobStarted: {'identifier': 'vrx_gz'}
+[8.002943] (vrx_gz) JobProgress: {'identifier': 'vrx_gz', 'progress': 'cmake'}
+[8.003111] (vrx_gz) Command: {'cmd': ['/usr/bin/cmake', '/home/zjh/vrx_ws/src/vrx/vrx_gz', '-DCMAKE_INSTALL_PREFIX=/home/zjh/vrx_ws/install'], 'cwd': '/home/zjh/vrx_ws/build/vrx_gz', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zjh'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zjh'), ('OLDPWD', '/home/zjh/vrx_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1242'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zjh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zjh-MS-7D32:@/tmp/.ICE-unix/1214,unix/zjh-MS-7D32:/tmp/.ICE-unix/1214'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/27ad63f3_de5f_4176_8f8c_3fd90c257547'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XCR9W2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.274'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zjh/vrx_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zjh/vrx_ws/build/vrx_gz'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zjh/vrx_ws/install:/opt/ros/humble')]), 'shell': False}
+[8.037275] (-) TimerEvent: {}
+[8.041541] (vrx_gz) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[8.075043] (vrx_gz) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[8.079866] (vrx_gz) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[8.123134] (vrx_gz) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[8.128626] (vrx_gz) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[8.128744] (vrx_gz) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[8.128911] (vrx_gz) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[8.130612] (vrx_gz) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[8.137360] (-) TimerEvent: {}
+[8.182926] (vrx_gz) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[8.186804] (vrx_gz) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[8.186928] (vrx_gz) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[8.187177] (vrx_gz) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[8.188169] (vrx_gz) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[8.237460] (-) TimerEvent: {}
+[8.288425] (vrx_gz) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[8.335866] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sim7 -- found version 7.9.0\n'}
+[8.337525] (-) TimerEvent: {}
+[8.339719] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-sim7\n'}
+[8.340510] (vrx_gz) StdoutLine: {'line': b'-- Looking for sdformat13 -- found version 13.9.0\n'}
+[8.340698] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of sdformat13\n'}
+[8.343960] (vrx_gz) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[8.351632] (vrx_gz) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[8.376173] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[8.376336] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[8.376400] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[8.376473] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[8.376534] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[8.376620] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[8.376691] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-utils2> component [cli]\n'}
+[8.377439] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-utils2-cli -- found version 2.2.0\n'}
+[8.377685] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2-cli\n'}
+[8.378871] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.3\n'}
+[8.379087] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[8.379279] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[8.379489] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [loader]\n'}
+[8.380285] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-plugin2-loader -- found version 2.0.3\n'}
+[8.380461] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-loader\n'}
+[8.380672] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [register]\n'}
+[8.381475] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-plugin2-register -- found version 2.0.3\n'}
+[8.381655] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-register\n'}
+[8.382670] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-transport12 -- found version 12.2.2\n'}
+[8.382912] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport12\n'}
+[8.437628] (-) TimerEvent: {}
+[8.488556] (vrx_gz) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[8.496675] (vrx_gz) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[8.499499] (vrx_gz) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[8.507473] (vrx_gz) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[8.528278] (vrx_gz) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[8.531575] (vrx_gz) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[8.537732] (-) TimerEvent: {}
+[8.538935] (vrx_gz) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[8.560061] (vrx_gz) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[8.560263] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[8.561102] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.5.1\n'}
+[8.561330] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-msgs9\n'}
+[8.573836] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[8.577849] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-transport12> component [log]\n'}
+[8.577954] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-transport12-log -- found version 12.2.2\n'}
+[8.578083] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport12-log\n'}
+[8.578431] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-transport12> component [parameters]\n'}
+[8.579587] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-transport12-parameters -- found version 12.2.2\n'}
+[8.579928] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport12-parameters\n'}
+[8.580602] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.5.1\n'}
+[8.581497] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.0\n'}
+[8.581718] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[8.581905] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[8.582038] (vrx_gz) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[8.582558] (vrx_gz) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[8.583316] (vrx_gz) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[8.586956] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-common5> component [profiler]\n'}
+[8.587730] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-common5-profiler -- found version 5.7.0\n'}
+[8.587937] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-profiler\n'}
+[8.590602] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[8.590677] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-common5-events -- found version 5.7.0\n'}
+[8.590699] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-events\n'}
+[8.590721] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[8.590742] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-common5> component [av]\n'}
+[8.591457] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-common5-av -- found version 5.7.0\n'}
+[8.592505] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-av\n'}
+[8.595063] (vrx_gz) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[8.602878] (vrx_gz) StdoutLine: {'line': b'--   Found libswscale, version 5.9.100\n'}
+[8.622783] (vrx_gz) StdoutLine: {'line': b'-- Found SWSCALE: TRUE  \n'}
+[8.626021] (vrx_gz) StdoutLine: {'line': b"-- Checking for module 'libavdevice >= 56.4.100'\n"}
+[8.633843] (vrx_gz) StdoutLine: {'line': b'--   Found libavdevice , version 58.13.100\n'}
+[8.637834] (-) TimerEvent: {}
+[8.656620] (vrx_gz) StdoutLine: {'line': b'-- Found AVDEVICE: TRUE (Required is at least version "56.4.100") \n'}
+[8.659348] (vrx_gz) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[8.667927] (vrx_gz) StdoutLine: {'line': b'--   Found libavformat, version 58.76.100\n'}
+[8.686687] (vrx_gz) StdoutLine: {'line': b'-- Found AVFORMAT: TRUE  \n'}
+[8.689556] (vrx_gz) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[8.699118] (vrx_gz) StdoutLine: {'line': b'--   Found libavcodec, version 58.134.100\n'}
+[8.718443] (vrx_gz) StdoutLine: {'line': b'-- Found AVCODEC: TRUE  \n'}
+[8.724295] (vrx_gz) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[8.727668] (vrx_gz) StdoutLine: {'line': b'--   Found libavutil, version 56.70.100\n'}
+[8.737919] (-) TimerEvent: {}
+[8.745886] (vrx_gz) StdoutLine: {'line': b'-- Found AVUTIL: TRUE  \n'}
+[8.746359] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-common5> component [io]\n'}
+[8.747517] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-common5-io -- found version 5.7.0\n'}
+[8.747755] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-io\n'}
+[8.748857] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-fuel_tools8 -- found version 8.2.0\n'}
+[8.749040] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-fuel_tools8\n'}
+[8.796305] (vrx_gz) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[8.801043] (vrx_gz) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[8.809700] (vrx_gz) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[8.828553] (vrx_gz) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[8.831517] (vrx_gz) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[8.837981] (-) TimerEvent: {}
+[8.838444] (vrx_gz) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[8.857571] (vrx_gz) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[8.857899] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[8.858150] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.0\n'}
+[8.858415] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[8.858621] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[8.858681] (vrx_gz) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[8.858716] (vrx_gz) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[8.863205] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-common5> component [testing]\n'}
+[8.864079] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-common5-testing -- found version 5.7.0\n'}
+[8.864649] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-testing\n'}
+[8.864940] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[8.865144] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.5.1\n'}
+[8.868871] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-gui7 -- found version 7.2.2\n'}
+[8.869165] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-gui7\n'}
+[8.883377] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[8.883512] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[8.883664] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.0\n'}
+[8.883871] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.3\n'}
+[8.884094] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-transport12 -- found version 12.2.2\n'}
+[8.884877] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-rendering7 -- found version 7.5.0\n'}
+[8.886541] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-rendering7\n'}
+[8.886624] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[8.886739] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[8.886790] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[8.886821] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-math7> component [eigen3]\n'}
+[8.887104] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-math7-eigen3 -- found version 7.5.1\n'}
+[8.887331] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7-eigen3\n'}
+[8.891419] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.0\n'}
+[8.891658] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[8.891849] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[8.891934] (vrx_gz) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[8.892014] (vrx_gz) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[8.897192] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[8.899800] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-common5-graphics -- found version 5.7.0\n'}
+[8.899883] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-graphics\n'}
+[8.899941] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[8.903233] (vrx_gz) StdoutLine: {'line': b'-- Found GzAssimp: TRUE (found version "5.2.0") \n'}
+[8.903689] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[8.904043] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-common5> component [geospatial]\n'}
+[8.905391] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-common5-geospatial -- found version 5.7.0\n'}
+[8.905776] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-geospatial\n'}
+[8.906115] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[8.906486] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.0\n'}
+[8.907221] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.3\n'}
+[8.907572] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[8.907861] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[8.907999] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [all]\n'}
+[8.909663] (vrx_gz) StdoutLine: {'line': b'-- Looking for all libraries of gz-plugin2 -- found version 2.0.3\n'}
+[8.910089] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.3\n'}
+[8.911384] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[8.914836] (vrx_gz) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL \n'}
+[8.915644] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.5.1\n'}
+[8.925727] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-physics6 -- found version 6.7.0\n'}
+[8.925872] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics6\n'}
+[8.926061] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.0\n'}
+[8.926287] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[8.926454] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.3\n'}
+[8.926644] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[8.927228] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-physics6> component [heightmap]\n'}
+[8.927976] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-physics6-heightmap -- found version 6.7.0\n'}
+[8.928162] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics6-heightmap\n'}
+[8.928341] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.0\n'}
+[8.928570] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-physics6> component [mesh]\n'}
+[8.929407] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-physics6-mesh -- found version 6.7.0\n'}
+[8.929533] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics6-mesh\n'}
+[8.932305] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.0\n'}
+[8.932373] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-physics6> component [sdf]\n'}
+[8.932399] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-physics6-sdf -- found version 6.7.0\n'}
+[8.932420] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics6-sdf\n'}
+[8.932443] (vrx_gz) StdoutLine: {'line': b'-- Looking for sdformat13 -- found version 13.9.0\n'}
+[8.933323] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[8.934218] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7\n'}
+[8.938053] (-) TimerEvent: {}
+[8.944250] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[8.944444] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.0\n'}
+[8.944677] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-transport12 -- found version 12.2.2\n'}
+[8.944899] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-rendering7 -- found version 7.5.0\n'}
+[8.945121] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.5.1\n'}
+[8.945336] (vrx_gz) StdoutLine: {'line': b'-- Looking for sdformat13 -- found version 13.9.0\n'}
+[8.945662] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [air_pressure]\n'}
+[8.946474] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7-air_pressure -- found version 7.3.1\n'}
+[8.946718] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-air_pressure\n'}
+[8.946972] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [air_speed]\n'}
+[8.947754] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7-air_speed -- found version 7.3.1\n'}
+[8.947992] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-air_speed\n'}
+[8.948234] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [altimeter]\n'}
+[8.948992] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7-altimeter -- found version 7.3.1\n'}
+[8.949240] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-altimeter\n'}
+[8.949480] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [imu]\n'}
+[8.950268] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7-imu -- found version 7.3.1\n'}
+[8.950492] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-imu\n'}
+[8.950811] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [force_torque]\n'}
+[8.954024] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7-force_torque -- found version 7.3.1\n'}
+[8.954151] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-force_torque\n'}
+[8.954207] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [logical_camera]\n'}
+[8.954249] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7-logical_camera -- found version 7.3.1\n'}
+[8.954287] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-logical_camera\n'}
+[8.954354] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [magnetometer]\n'}
+[8.955480] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7-magnetometer -- found version 7.3.1\n'}
+[8.955827] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-magnetometer\n'}
+[8.956169] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [navsat]\n'}
+[8.957208] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7-navsat -- found version 7.3.1\n'}
+[8.957455] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-navsat\n'}
+[8.957703] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [rendering]\n'}
+[8.958502] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7-rendering -- found version 7.3.1\n'}
+[8.958748] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-rendering\n'}
+[8.958997] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [lidar]\n'}
+[8.959875] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7-lidar -- found version 7.3.1\n'}
+[8.960048] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-lidar\n'}
+[8.960260] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[8.960496] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [gpu_lidar]\n'}
+[8.961280] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7-gpu_lidar -- found version 7.3.1\n'}
+[8.961503] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-gpu_lidar\n'}
+[8.961705] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[8.961991] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [camera]\n'}
+[8.962773] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7-camera -- found version 7.3.1\n'}
+[8.963005] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-camera\n'}
+[8.963209] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[8.963484] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [boundingbox_camera]\n'}
+[8.964316] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7-boundingbox_camera -- found version 7.3.1\n'}
+[8.964569] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-boundingbox_camera\n'}
+[8.964833] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [segmentation_camera]\n'}
+[8.965644] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7-segmentation_camera -- found version 7.3.1\n'}
+[8.965836] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-segmentation_camera\n'}
+[8.966077] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [depth_camera]\n'}
+[8.966927] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7-depth_camera -- found version 7.3.1\n'}
+[8.967132] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-depth_camera\n'}
+[8.967329] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[8.967600] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [rgbd_camera]\n'}
+[8.968395] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7-rgbd_camera -- found version 7.3.1\n'}
+[8.968591] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-rgbd_camera\n'}
+[8.968789] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[8.969055] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [thermal_camera]\n'}
+[8.969835] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7-thermal_camera -- found version 7.3.1\n'}
+[8.970046] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-thermal_camera\n'}
+[8.970263] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[8.970503] (vrx_gz) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [wide_angle_camera]\n'}
+[8.971304] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7-wide_angle_camera -- found version 7.3.1\n'}
+[8.971498] (vrx_gz) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-wide_angle_camera\n'}
+[8.972036] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-rendering7 -- found version 7.5.0\n'}
+[8.972214] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[8.972443] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[8.986118] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.7.0\n'}
+[8.986304] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-fuel_tools8 -- found version 8.2.0\n'}
+[8.986515] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.5.1\n'}
+[8.986721] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.5.1\n'}
+[8.986964] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-transport12 -- found version 12.2.2\n'}
+[8.987148] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.3\n'}
+[8.987360] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-rendering7 -- found version 7.5.0\n'}
+[8.987564] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.3.1\n'}
+[8.987763] (vrx_gz) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.0\n'}
+[8.987965] (vrx_gz) StdoutLine: {'line': b'-- Looking for sdformat13 -- found version 13.9.0\n'}
+[8.988559] (vrx_gz) StdoutLine: {'line': b'-- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[9.001262] (vrx_gz) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[9.004255] (vrx_gz) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[9.009146] (vrx_gz) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[9.015373] (vrx_gz) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[9.024923] (vrx_gz) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[9.038162] (-) TimerEvent: {}
+[9.132716] (vrx_gz) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.138226] (-) TimerEvent: {}
+[9.176904] (vrx_gz) StdoutLine: {'line': b'-- Generating done\n'}
+[9.178493] (vrx_gz) StdoutLine: {'line': b'-- Build files have been written to: /home/zjh/vrx_ws/build/vrx_gz\n'}
+[9.186579] (vrx_gz) CommandEnded: {'returncode': 0}
+[9.187177] (vrx_gz) JobProgress: {'identifier': 'vrx_gz', 'progress': 'build'}
+[9.187656] (vrx_gz) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zjh/vrx_ws/build/vrx_gz', '--', '-j24', '-l24'], 'cwd': '/home/zjh/vrx_ws/build/vrx_gz', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zjh'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zjh'), ('OLDPWD', '/home/zjh/vrx_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1242'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zjh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zjh-MS-7D32:@/tmp/.ICE-unix/1214,unix/zjh-MS-7D32:/tmp/.ICE-unix/1214'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/27ad63f3_de5f_4176_8f8c_3fd90c257547'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XCR9W2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.274'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zjh/vrx_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zjh/vrx_ws/build/vrx_gz'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zjh/vrx_ws/install:/opt/ros/humble')]), 'shell': False}
+[9.220323] (vrx_gz) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/Waves.dir/src/Wavefield.cc.o\x1b[0m\n'}
+[9.221848] (vrx_gz) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/ScoringPlugin.dir/src/ScoringPlugin.cc.o\x1b[0m\n'}
+[9.227413] (vrx_gz) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_vrx_gz\n'}
+[9.238574] (-) TimerEvent: {}
+[9.338832] (-) TimerEvent: {}
+[9.354004] (vrx_gz) StdoutLine: {'line': b'running egg_info\n'}
+[9.354443] (vrx_gz) StdoutLine: {'line': b'creating vrx_gz.egg-info\n'}
+[9.354506] (vrx_gz) StdoutLine: {'line': b'writing vrx_gz.egg-info/PKG-INFO\n'}
+[9.354584] (vrx_gz) StdoutLine: {'line': b'writing dependency_links to vrx_gz.egg-info/dependency_links.txt\n'}
+[9.354640] (vrx_gz) StdoutLine: {'line': b'writing top-level names to vrx_gz.egg-info/top_level.txt\n'}
+[9.354719] (vrx_gz) StdoutLine: {'line': b"writing manifest file 'vrx_gz.egg-info/SOURCES.txt'\n"}
+[9.355628] (vrx_gz) StdoutLine: {'line': b"reading manifest file 'vrx_gz.egg-info/SOURCES.txt'\n"}
+[9.355849] (vrx_gz) StdoutLine: {'line': b"writing manifest file 'vrx_gz.egg-info/SOURCES.txt'\n"}
+[9.370633] (vrx_gz) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_vrx_gz_egg\n'}
+[9.438921] (-) TimerEvent: {}
+[9.539166] (-) TimerEvent: {}
+[9.639388] (-) TimerEvent: {}
+[9.739650] (-) TimerEvent: {}
+[9.839828] (-) TimerEvent: {}
+[9.940044] (-) TimerEvent: {}
+[10.040257] (-) TimerEvent: {}
+[10.140524] (-) TimerEvent: {}
+[10.240756] (-) TimerEvent: {}
+[10.341022] (-) TimerEvent: {}
+[10.441261] (-) TimerEvent: {}
+[10.541512] (-) TimerEvent: {}
+[10.641758] (-) TimerEvent: {}
+[10.741987] (-) TimerEvent: {}
+[10.842255] (-) TimerEvent: {}
+[10.942508] (-) TimerEvent: {}
+[11.042724] (-) TimerEvent: {}
+[11.142963] (-) TimerEvent: {}
+[11.214266] (vrx_gz) StdoutLine: {'line': b'[  6%] \x1b[32m\x1b[1mLinking CXX shared library libWaves.so\x1b[0m\n'}
+[11.243048] (-) TimerEvent: {}
+[11.343288] (-) TimerEvent: {}
+[11.346402] (vrx_gz) StdoutLine: {'line': b'[  6%] Built target Waves\n'}
+[11.357955] (vrx_gz) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/PolyhedraBuoyancyDrag.dir/src/PolyhedraBuoyancyDrag.cc.o\x1b[0m\n'}
+[11.358583] (vrx_gz) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/PolyhedraBuoyancyDrag.dir/src/PolyhedronVolume.cc.o\x1b[0m\n'}
+[11.358680] (vrx_gz) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/PolyhedraBuoyancyDrag.dir/src/ShapeVolume.cc.o\x1b[0m\n'}
+[11.443382] (-) TimerEvent: {}
+[11.543627] (-) TimerEvent: {}
+[11.643853] (-) TimerEvent: {}
+[11.746828] (-) TimerEvent: {}
+[11.847058] (-) TimerEvent: {}
+[11.947285] (-) TimerEvent: {}
+[12.033944] (vrx_gz) StdoutLine: {'line': b'[ 14%] \x1b[32m\x1b[1mLinking CXX shared library libScoringPlugin.so\x1b[0m\n'}
+[12.047381] (-) TimerEvent: {}
+[12.147595] (-) TimerEvent: {}
+[12.211089] (vrx_gz) StdoutLine: {'line': b'[ 14%] Built target ScoringPlugin\n'}
+[12.226404] (vrx_gz) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/BallShooterPlugin.dir/src/BallShooterPlugin.cc.o\x1b[0m\n'}
+[12.227391] (vrx_gz) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/StationkeepingScoringPlugin.dir/src/WaypointMarkers.cc.o\x1b[0m\n'}
+[12.227526] (vrx_gz) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/StationkeepingScoringPlugin.dir/src/StationkeepingScoringPlugin.cc.o\x1b[0m\n'}
+[12.231257] (vrx_gz) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/WayfindingScoringPlugin.dir/src/WayfindingScoringPlugin.cc.o\x1b[0m\n'}
+[12.232208] (vrx_gz) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/AcousticPerceptionScoringPlugin.dir/src/WaypointMarkers.cc.o\x1b[0m\n'}
+[12.232315] (vrx_gz) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/LightBuoyPlugin.dir/src/LightBuoyPlugin.cc.o\x1b[0m\n'}
+[12.232361] (vrx_gz) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/AcousticTrackingScoringPlugin.dir/src/AcousticTrackingScoringPlugin.cc.o\x1b[0m\n'}
+[12.233516] (vrx_gz) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/SimpleHydrodynamics.dir/src/SimpleHydrodynamics.cc.o\x1b[0m\n'}
+[12.233660] (vrx_gz) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o\x1b[0m\n'}
+[12.233717] (vrx_gz) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/AcousticPerceptionScoringPlugin.dir/src/AcousticPerceptionScoringPlugin.cc.o\x1b[0m\n'}
+[12.233972] (vrx_gz) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/AcousticTrackingScoringPlugin.dir/src/WaypointMarkers.cc.o\x1b[0m\n'}
+[12.234046] (vrx_gz) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/USVWind.dir/src/USVWind.cc.o\x1b[0m\n'}
+[12.234089] (vrx_gz) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/PerceptionScoringPlugin.dir/src/PerceptionScoringPlugin.cc.o\x1b[0m\n'}
+[12.234127] (vrx_gz) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/ScanDockScoringPlugin.dir/src/ScanDockScoringPlugin.cc.o\x1b[0m\n'}
+[12.234163] (vrx_gz) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/NavigationScoringPlugin.dir/src/NavigationScoringPlugin.cc.o\x1b[0m\n'}
+[12.234196] (vrx_gz) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/WayfindingScoringPlugin.dir/src/WaypointMarkers.cc.o\x1b[0m\n'}
+[12.234237] (vrx_gz) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/GymkhanaScoringPlugin.dir/src/GymkhanaScoringPlugin.cc.o\x1b[0m\n'}
+[12.234269] (vrx_gz) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/PlacardPlugin.dir/src/PlacardPlugin.cc.o\x1b[0m\n'}
+[12.234301] (vrx_gz) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/AcousticPingerPlugin.dir/src/AcousticPingerPlugin.cc.o\x1b[0m\n'}
+[12.234334] (vrx_gz) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/WildlifeScoringPlugin.dir/src/WildlifeScoringPlugin.cc.o\x1b[0m\n'}
+[12.237891] (vrx_gz) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o\x1b[0m\n'}
+[12.238052] (vrx_gz) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/Surface.dir/src/Surface.cc.o\x1b[0m\n'}
+[12.247697] (-) TimerEvent: {}
+[12.347989] (-) TimerEvent: {}
+[12.448369] (-) TimerEvent: {}
+[12.552068] (-) TimerEvent: {}
+[12.652392] (-) TimerEvent: {}
+[12.752705] (-) TimerEvent: {}
+[12.853015] (-) TimerEvent: {}
+[12.953315] (-) TimerEvent: {}
+[13.053616] (-) TimerEvent: {}
+[13.154002] (-) TimerEvent: {}
+[13.254353] (-) TimerEvent: {}
+[13.354650] (-) TimerEvent: {}
+[13.454945] (-) TimerEvent: {}
+[13.555244] (-) TimerEvent: {}
+[13.655541] (-) TimerEvent: {}
+[13.756842] (-) TimerEvent: {}
+[13.857132] (-) TimerEvent: {}
+[13.957412] (-) TimerEvent: {}
+[14.057731] (-) TimerEvent: {}
+[14.158044] (-) TimerEvent: {}
+[14.258846] (-) TimerEvent: {}
+[14.359129] (-) TimerEvent: {}
+[14.461843] (-) TimerEvent: {}
+[14.562151] (-) TimerEvent: {}
+[14.665844] (-) TimerEvent: {}
+[14.773942] (-) TimerEvent: {}
+[14.874244] (-) TimerEvent: {}
+[14.974559] (-) TimerEvent: {}
+[15.075063] (-) TimerEvent: {}
+[15.175531] (-) TimerEvent: {}
+[15.276842] (-) TimerEvent: {}
+[15.377111] (-) TimerEvent: {}
+[15.477402] (-) TimerEvent: {}
+[15.573633] (vrx_gz) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libPublisherPlugin.so\x1b[0m\n'}
+[15.577513] (-) TimerEvent: {}
+[15.683845] (-) TimerEvent: {}
+[15.785940] (-) TimerEvent: {}
+[15.865604] (vrx_gz) StdoutLine: {'line': b'[ 62%] Built target PublisherPlugin\n'}
+[15.886058] (-) TimerEvent: {}
+[15.986394] (-) TimerEvent: {}
+[16.086699] (-) TimerEvent: {}
+[16.158089] (vrx_gz) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libLightBuoyPlugin.so\x1b[0m\n'}
+[16.186815] (-) TimerEvent: {}
+[16.287874] (-) TimerEvent: {}
+[16.388846] (-) TimerEvent: {}
+[16.484047] (vrx_gz) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libSimpleHydrodynamics.so\x1b[0m\n'}
+[16.488959] (-) TimerEvent: {}
+[16.537561] (vrx_gz) StdoutLine: {'line': b'[ 66%] Built target LightBuoyPlugin\n'}
+[16.589058] (-) TimerEvent: {}
+[16.689331] (-) TimerEvent: {}
+[16.789599] (-) TimerEvent: {}
+[16.794856] (vrx_gz) StdoutLine: {'line': b'[ 66%] Built target SimpleHydrodynamics\n'}
+[16.889705] (-) TimerEvent: {}
+[16.914817] (vrx_gz) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libGymkhanaScoringPlugin.so\x1b[0m\n'}
+[16.989818] (-) TimerEvent: {}
+[17.090100] (-) TimerEvent: {}
+[17.131904] (vrx_gz) StdoutLine: {'line': b'[ 68%] Built target GymkhanaScoringPlugin\n'}
+[17.190746] (-) TimerEvent: {}
+[17.205756] (vrx_gz) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libSurface.so\x1b[0m\n'}
+[17.276175] (vrx_gz) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libPlacardPlugin.so\x1b[0m\n'}
+[17.290848] (-) TimerEvent: {}
+[17.393639] (-) TimerEvent: {}
+[17.470833] (vrx_gz) StdoutLine: {'line': b'[ 72%] Built target Surface\n'}
+[17.486333] (vrx_gz) StdoutLine: {'line': b'[ 72%] Built target PlacardPlugin\n'}
+[17.493735] (-) TimerEvent: {}
+[17.595335] (-) TimerEvent: {}
+[17.598543] (vrx_gz) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libPerceptionScoringPlugin.so\x1b[0m\n'}
+[17.667649] (vrx_gz) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libPolyhedraBuoyancyDrag.so\x1b[0m\n'}
+[17.695435] (-) TimerEvent: {}
+[17.795696] (-) TimerEvent: {}
+[17.862789] (vrx_gz) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libAcousticPingerPlugin.so\x1b[0m\n'}
+[17.896849] (-) TimerEvent: {}
+[17.906473] (vrx_gz) StdoutLine: {'line': b'[ 79%] Built target PerceptionScoringPlugin\n'}
+[17.943883] (vrx_gz) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libWildlifeScoringPlugin.so\x1b[0m\n'}
+[17.996957] (-) TimerEvent: {}
+[18.006246] (vrx_gz) StdoutLine: {'line': b'[ 81%] Built target PolyhedraBuoyancyDrag\n'}
+[18.097154] (-) TimerEvent: {}
+[18.101440] (vrx_gz) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared library libNavigationScoringPlugin.so\x1b[0m\n'}
+[18.122836] (vrx_gz) StdoutLine: {'line': b'[ 83%] Built target AcousticPingerPlugin\n'}
+[18.137904] (vrx_gz) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX shared library libAcousticTrackingScoringPlugin.so\x1b[0m\n'}
+[18.191796] (vrx_gz) StdoutLine: {'line': b'[ 85%] Built target WildlifeScoringPlugin\n'}
+[18.197258] (-) TimerEvent: {}
+[18.219301] (vrx_gz) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX shared library libWayfindingScoringPlugin.so\x1b[0m\n'}
+[18.297366] (-) TimerEvent: {}
+[18.342342] (vrx_gz) StdoutLine: {'line': b'[ 87%] Built target NavigationScoringPlugin\n'}
+[18.343254] (vrx_gz) StdoutLine: {'line': b'[ 87%] Built target AcousticTrackingScoringPlugin\n'}
+[18.397466] (-) TimerEvent: {}
+[18.411500] (vrx_gz) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking CXX shared library libStationkeepingScoringPlugin.so\x1b[0m\n'}
+[18.432872] (vrx_gz) StdoutLine: {'line': b'[ 89%] Built target WayfindingScoringPlugin\n'}
+[18.497593] (-) TimerEvent: {}
+[18.597867] (-) TimerEvent: {}
+[18.612689] (vrx_gz) StdoutLine: {'line': b'[ 89%] Built target StationkeepingScoringPlugin\n'}
+[18.700428] (-) TimerEvent: {}
+[18.800656] (-) TimerEvent: {}
+[18.893694] (vrx_gz) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX shared library libWaveVisual.so\x1b[0m\n'}
+[18.900752] (-) TimerEvent: {}
+[18.940726] (vrx_gz) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX shared library libScanDockScoringPlugin.so\x1b[0m\n'}
+[18.940906] (vrx_gz) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX shared library libAcousticPerceptionScoringPlugin.so\x1b[0m\n'}
+[19.000850] (-) TimerEvent: {}
+[19.097185] (vrx_gz) StdoutLine: {'line': b'[ 95%] Built target WaveVisual\n'}
+[19.100918] (-) TimerEvent: {}
+[19.142962] (vrx_gz) StdoutLine: {'line': b'[ 95%] Built target AcousticPerceptionScoringPlugin\n'}
+[19.148718] (vrx_gz) StdoutLine: {'line': b'[ 95%] Built target ScanDockScoringPlugin\n'}
+[19.197901] (vrx_gz) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX shared library libBallShooterPlugin.so\x1b[0m\n'}
+[19.200979] (-) TimerEvent: {}
+[19.235748] (vrx_gz) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libUSVWind.so\x1b[0m\n'}
+[19.301076] (-) TimerEvent: {}
+[19.378845] (vrx_gz) StdoutLine: {'line': b'[100%] Built target BallShooterPlugin\n'}
+[19.394348] (vrx_gz) StdoutLine: {'line': b'[100%] Built target USVWind\n'}
+[19.400939] (vrx_gz) CommandEnded: {'returncode': 0}
+[19.401258] (-) TimerEvent: {}
+[19.465451] (vrx_gz) JobProgress: {'identifier': 'vrx_gz', 'progress': 'install'}
+[19.465764] (vrx_gz) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zjh/vrx_ws/build/vrx_gz'], 'cwd': '/home/zjh/vrx_ws/build/vrx_gz', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zjh'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zjh'), ('OLDPWD', '/home/zjh/vrx_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1242'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zjh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zjh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zjh-MS-7D32:@/tmp/.ICE-unix/1214,unix/zjh-MS-7D32:/tmp/.ICE-unix/1214'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/27ad63f3_de5f_4176_8f8c_3fd90c257547'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XCR9W2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.274'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zjh/vrx_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zjh/vrx_ws/build/vrx_gz'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zjh/vrx_ws/install:/opt/ros/humble')]), 'shell': False}
+[19.472346] (vrx_gz) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.472442] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/environment/resource_paths.dsv\n'}
+[19.472575] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/environment/resource_paths.sh\n'}
+[19.472686] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libWaves.so\n'}
+[19.473423] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libPolyhedraBuoyancyDrag.so\n'}
+[19.474836] (vrx_gz) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/libPolyhedraBuoyancyDrag.so" to ""\n'}
+[19.474881] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libScoringPlugin.so\n'}
+[19.476243] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libStationkeepingScoringPlugin.so\n'}
+[19.477933] (vrx_gz) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/libStationkeepingScoringPlugin.so" to ""\n'}
+[19.477987] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libWayfindingScoringPlugin.so\n'}
+[19.478963] (vrx_gz) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/libWayfindingScoringPlugin.so" to ""\n'}
+[19.479004] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libAcousticPerceptionScoringPlugin.so\n'}
+[19.479851] (vrx_gz) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/libAcousticPerceptionScoringPlugin.so" to ""\n'}
+[19.479898] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libAcousticTrackingScoringPlugin.so\n'}
+[19.480729] (vrx_gz) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/libAcousticTrackingScoringPlugin.so" to ""\n'}
+[19.480772] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libAcousticPingerPlugin.so\n'}
+[19.481498] (vrx_gz) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/libAcousticPingerPlugin.so" to ""\n'}
+[19.481529] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libBallShooterPlugin.so\n'}
+[19.482527] (vrx_gz) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/libBallShooterPlugin.so" to ""\n'}
+[19.482568] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libLightBuoyPlugin.so\n'}
+[19.483141] (vrx_gz) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/libLightBuoyPlugin.so" to ""\n'}
+[19.483193] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libNavigationScoringPlugin.so\n'}
+[19.484141] (vrx_gz) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/libNavigationScoringPlugin.so" to ""\n'}
+[19.484246] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libGymkhanaScoringPlugin.so\n'}
+[19.485001] (vrx_gz) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/libGymkhanaScoringPlugin.so" to ""\n'}
+[19.485069] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libPerceptionScoringPlugin.so\n'}
+[19.485915] (vrx_gz) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/libPerceptionScoringPlugin.so" to ""\n'}
+[19.485968] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libPlacardPlugin.so\n'}
+[19.486662] (vrx_gz) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/libPlacardPlugin.so" to ""\n'}
+[19.486710] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libPublisherPlugin.so\n'}
+[19.490746] (vrx_gz) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/libPublisherPlugin.so" to ""\n'}
+[19.490815] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libScanDockScoringPlugin.so\n'}
+[19.490842] (vrx_gz) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/libScanDockScoringPlugin.so" to ""\n'}
+[19.490867] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libSimpleHydrodynamics.so\n'}
+[19.490890] (vrx_gz) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/libSimpleHydrodynamics.so" to ""\n'}
+[19.490911] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libSurface.so\n'}
+[19.490933] (vrx_gz) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/libSurface.so" to ""\n'}
+[19.490954] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libUSVWind.so\n'}
+[19.491942] (vrx_gz) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/libUSVWind.so" to ""\n'}
+[19.492004] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libWaveVisual.so\n'}
+[19.493507] (vrx_gz) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/libWaveVisual.so" to ""\n'}
+[19.493569] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/lib/libWildlifeScoringPlugin.so\n'}
+[19.495029] (vrx_gz) StdoutLine: {'line': b'-- Set runtime path of "/home/zjh/vrx_ws/install/lib/libWildlifeScoringPlugin.so" to ""\n'}
+[19.495105] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/environment/pythonpath.sh\n'}
+[19.495160] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/environment/pythonpath.dsv\n'}
+[19.495251] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gz-0.0.0-py3.10.egg-info\n'}
+[19.495321] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gz-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[19.495399] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gz-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[19.495467] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gz-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[19.495535] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gz-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[19.495635] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gz\n'}
+[19.495692] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gz/payload_bridges.py\n'}
+[19.495786] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gz/__init__.py\n'}
+[19.495860] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gz/bridges.py\n'}
+[19.495899] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gz/model.py\n'}
+[19.495933] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gz/bridge.py\n'}
+[19.495964] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gz/launch.py\n'}
+[19.501315] (-) TimerEvent: {}
+[19.519636] (vrx_gz) StdoutLine: {'line': b"Listing '/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gz'...\n"}
+[19.519736] (vrx_gz) StdoutLine: {'line': b"Compiling '/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gz/__init__.py'...\n"}
+[19.519767] (vrx_gz) StdoutLine: {'line': b"Compiling '/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gz/bridge.py'...\n"}
+[19.519796] (vrx_gz) StdoutLine: {'line': b"Compiling '/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gz/bridges.py'...\n"}
+[19.519819] (vrx_gz) StdoutLine: {'line': b"Compiling '/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gz/launch.py'...\n"}
+[19.519845] (vrx_gz) StdoutLine: {'line': b"Compiling '/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gz/model.py'...\n"}
+[19.519867] (vrx_gz) StdoutLine: {'line': b"Compiling '/home/zjh/vrx_ws/install/local/lib/python3.10/dist-packages/vrx_gz/payload_bridges.py'...\n"}
+[19.522136] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/config\n'}
+[19.522189] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/config/wamv.yaml\n'}
+[19.522233] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/config/roboboat.yaml\n'}
+[19.522267] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/launch\n'}
+[19.522291] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/launch/vrx_environment.launch.py\n'}
+[19.522342] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/launch/spawn.launch.py\n'}
+[19.522364] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/launch/competition.launch.py\n'}
+[19.522387] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/launch/spawn_config.launch.py\n'}
+[19.522410] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/launch/usv_joy_teleop.py\n'}
+[19.522452] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models\n'}
+[19.522529] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_ygb\n'}
+[19.522558] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_ygb/model.sdf\n'}
+[19.522584] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_ygb/model.config\n'}
+[19.522608] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_bgr\n'}
+[19.522631] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_bgr/model.sdf\n'}
+[19.522654] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_bgr/model.config\n'}
+[19.522676] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/symbol_triangle\n'}
+[19.522716] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/symbol_triangle/mesh\n'}
+[19.522790] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/symbol_triangle/mesh/triangle.dae\n'}
+[19.522816] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/symbol_triangle/model.sdf\n'}
+[19.522839] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/symbol_triangle/model.config\n'}
+[19.522863] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_navigation_course_0\n'}
+[19.522887] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_navigation_course_0/model.sdf\n'}
+[19.522910] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_navigation_course_0/model.config\n'}
+[19.522933] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/dock_2022_base\n'}
+[19.522956] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/dock_2022_base/model.sdf\n'}
+[19.522978] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/dock_2022_base/model.config\n'}
+[19.523044] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/dock_block_4x4\n'}
+[19.523247] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/dock_block_4x4/mesh\n'}
+[19.523361] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/dock_block_4x4/mesh/DockCubes_Roughness.png\n'}
+[19.523485] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/dock_block_4x4/mesh/dock_block_4x4.dae\n'}
+[19.527904] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/dock_block_4x4/mesh/DockCubes_Normal.png\n'}
+[19.536611] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/dock_block_4x4/mesh/DockCubes_Metalness.png\n'}
+[19.536747] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/dock_block_4x4/mesh/DockCubes_Albedo.png\n'}
+[19.537205] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/dock_block_4x4/model.sdf\n'}
+[19.537277] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/dock_block_4x4/model.config\n'}
+[19.537323] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_navigation_course_5\n'}
+[19.537348] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_navigation_course_5/model.sdf\n'}
+[19.537397] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_navigation_course_5/model.config\n'}
+[19.537439] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_navigation_course_2\n'}
+[19.537472] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_navigation_course_2/model.sdf\n'}
+[19.537496] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_navigation_course_2/model.config\n'}
+[19.537518] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat02\n'}
+[19.537551] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat02/model.sdf\n'}
+[19.537587] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat02/meshes\n'}
+[19.537609] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat02/meshes/roboboat02.dae\n'}
+[19.538032] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat02/model.config\n'}
+[19.538066] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat02/materials\n'}
+[19.538097] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat02/materials/scripts\n'}
+[19.538126] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat02/materials/scripts/model.material\n'}
+[19.538162] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat02/materials/textures\n'}
+[19.538184] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat02/materials/textures/Boat02_Metallic.png\n'}
+[19.538537] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat02/materials/textures/Boat02_Normal.png\n'}
+[19.538968] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat02/materials/textures/Boat02_Albedo.png\n'}
+[19.540942] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat02/materials/textures/Boat02_Roughness.png\n'}
+[19.542206] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_rbg\n'}
+[19.542261] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_rbg/model.sdf\n'}
+[19.542285] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_rbg/model.config\n'}
+[19.542323] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/obstacle_course\n'}
+[19.542346] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/obstacle_course/model.sdf\n'}
+[19.542368] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/obstacle_course/model.config\n'}
+[19.542398] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_navigation_course_3\n'}
+[19.542437] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_navigation_course_3/model.sdf\n'}
+[19.542460] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_navigation_course_3/model.config\n'}
+[19.542481] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/platform\n'}
+[19.542515] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/platform/model.sdf\n'}
+[19.542537] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/platform/model.config\n'}
+[19.542559] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat_cpubox\n'}
+[19.542590] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat_cpubox/model.sdf\n'}
+[19.542626] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat_cpubox/meshes\n'}
+[19.542648] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat_cpubox/meshes/drybox.dae\n'}
+[19.542686] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat_cpubox/model.config\n'}
+[19.542716] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat_cpubox/materials\n'}
+[19.542751] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat_cpubox/materials/textures\n'}
+[19.542772] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat_cpubox/materials/textures/DryBox_Albedo.png\n'}
+[19.545166] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat_cpubox/materials/textures/DryBox_Roughness.png\n'}
+[19.549115] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat01\n'}
+[19.549292] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat01/model.sdf\n'}
+[19.549371] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat01/meshes\n'}
+[19.549427] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat01/meshes/prop.dae\n'}
+[19.549483] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat01/meshes/mount.dae\n'}
+[19.549546] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat01/meshes/housing.dae\n'}
+[19.549597] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat01/meshes/roboboat01.dae\n'}
+[19.549855] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat01/model.config\n'}
+[19.549933] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat01/materials\n'}
+[19.549989] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat01/materials/scripts\n'}
+[19.550043] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat01/materials/scripts/model.material\n'}
+[19.550145] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat01/materials/textures\n'}
+[19.550203] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat01/materials/textures/Boat01_Albedo.png\n'}
+[19.554338] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat01/materials/textures/Boat01_Normal.png\n'}
+[19.554484] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat01/materials/textures/Thruster_Roughness.png\n'}
+[19.554539] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat01/materials/textures/Thruster_Albedo.png\n'}
+[19.554591] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat01/materials/textures/Boat01_Roughness.png\n'}
+[19.555871] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/roboboat01/materials/textures/Boat01_Metallic.png\n'}
+[19.555949] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/entrance_exit\n'}
+[19.556020] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/entrance_exit/model.sdf\n'}
+[19.556098] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/entrance_exit/model.config\n'}
+[19.556153] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/placard_2022\n'}
+[19.556208] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/placard_2022/model.sdf\n'}
+[19.556296] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/placard_2022/meshes\n'}
+[19.556373] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/placard_2022/meshes/placard_2022.dae\n'}
+[19.556429] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/placard_2022/model.config\n'}
+[19.556483] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/placard_2022/materials\n'}
+[19.556537] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/placard_2022/materials/textures\n'}
+[19.556592] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/placard_2022/materials/textures/Placard.png\n'}
+[19.556646] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_rgy\n'}
+[19.556700] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_rgy/model.sdf\n'}
+[19.556754] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_rgy/model.config\n'}
+[19.556828] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_yrg\n'}
+[19.556881] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_yrg/model.sdf\n'}
+[19.556931] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_yrg/model.config\n'}
+[19.556982] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_rgb\n'}
+[19.557032] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_rgb/mesh\n'}
+[19.557082] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_rgb/mesh/LightTower_Normal.png\n'}
+[19.557823] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_rgb/mesh/LightTower_Metalness.png\n'}
+[19.557891] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_rgb/mesh/LightTower_Roughness.png\n'}
+[19.558205] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_rgb/mesh/LightTower_Albedo.png\n'}
+[19.559026] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_rgb/mesh/robotx_light_buoy.dae\n'}
+[19.559560] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_rgb/mesh/LightTower_Opacity.png\n'}
+[19.559636] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_rgb/model.sdf\n'}
+[19.559691] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_rgb/model.config\n'}
+[19.559764] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_gbr\n'}
+[19.559865] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_gbr/model.sdf\n'}
+[19.559921] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_gbr/model.config\n'}
+[19.559947] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_bgy\n'}
+[19.559972] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_bgy/model.sdf\n'}
+[19.559995] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_bgy/model.config\n'}
+[19.560018] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/dock_2022\n'}
+[19.560041] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/dock_2022/model.sdf\n'}
+[19.560066] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/dock_2022/model.config\n'}
+[19.560089] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_navigation_course_1\n'}
+[19.560112] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_navigation_course_1/model.sdf\n'}
+[19.560156] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_navigation_course_1/model.config\n'}
+[19.560181] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/coast_waves\n'}
+[19.560202] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/coast_waves/model.sdf\n'}
+[19.560222] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/coast_waves/meshes\n'}
+[19.560243] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/coast_waves/meshes/waterlow.dae\n'}
+[19.565443] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/coast_waves/model.config\n'}
+[19.565487] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/coast_waves/materials\n'}
+[19.565511] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/coast_waves/materials/programs\n'}
+[19.565533] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/coast_waves/materials/programs/GerstnerWaves_fs_330.glsl\n'}
+[19.565570] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/coast_waves/materials/programs/GerstnerWaves_vs_330.glsl\n'}
+[19.565592] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/coast_waves/materials/textures\n'}
+[19.565613] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/coast_waves/materials/textures/skybox_lowres.dds\n'}
+[19.565876] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/coast_waves/materials/textures/wave_normals.dds\n'}
+[19.566011] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/articulated_platform\n'}
+[19.566043] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/articulated_platform/model.sdf\n'}
+[19.566075] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/articulated_platform/model.config\n'}
+[19.566109] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_ybr\n'}
+[19.566132] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_ybr/model.sdf\n'}
+[19.566166] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/robotx_light_buoy_ybr/model.config\n'}
+[19.566190] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_course_2023_phase3_2\n'}
+[19.566224] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_course_2023_phase3_2/model.sdf\n'}
+[19.566248] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_course_2023_phase3_2/model.config\n'}
+[19.566283] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_course_2023_phase3_1\n'}
+[19.566306] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_course_2023_phase3_1/model.sdf\n'}
+[19.566337] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_course_2023_phase3_1/model.config\n'}
+[19.566375] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_navigation_course_4\n'}
+[19.566396] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_navigation_course_4/model.sdf\n'}
+[19.566424] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/models/short_navigation_course_4/model.config\n'}
+[19.566448] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds\n'}
+[19.566480] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/gymkhana_task.sdf\n'}
+[19.566503] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/sydney_regatta.sdf\n'}
+[19.566535] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/wayfinding_task.sdf\n'}
+[19.566567] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/stationkeeping_task.sdf\n'}
+[19.566598] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/follow_path_task.sdf\n'}
+[19.566630] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/acoustic_tracking_task.sdf\n'}
+[19.566665] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice\n'}
+[19.566686] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_follow_path2_task.sdf\n'}
+[19.566717] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_acoustic_tracking2_task.sdf\n'}
+[19.566750] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_wayfinding0_task.sdf\n'}
+[19.566785] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_wayfinding2_task.sdf\n'}
+[19.566815] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_scan_dock_deliver1_task.sdf\n'}
+[19.566845] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_follow_path1_task.sdf\n'}
+[19.566877] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_wayfinding1_task.sdf\n'}
+[19.566910] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_acoustic_perception1_task.sdf\n'}
+[19.566945] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_acoustic_tracking1_task.sdf\n'}
+[19.566983] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_perception0_task.sdf\n'}
+[19.567020] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_stationkeeping1_task.sdf\n'}
+[19.567054] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_wildlife1_task.sdf\n'}
+[19.567089] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_perception2_task.sdf\n'}
+[19.567132] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_scan_dock_deliver0_task.sdf\n'}
+[19.567171] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_acoustic_tracking0_task.sdf\n'}
+[19.567211] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_scan_dock_deliver2_task.sdf\n'}
+[19.567244] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_follow_path0_task.sdf\n'}
+[19.567279] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_acoustic_perception2_task.sdf\n'}
+[19.567312] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_acoustic_perception0_task.sdf\n'}
+[19.567363] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_wildlife2_task.sdf\n'}
+[19.567459] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_perception1_task.sdf\n'}
+[19.567514] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_wildlife0_task.sdf\n'}
+[19.567587] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_stationkeeping0_task.sdf\n'}
+[19.567636] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/2023_practice/practice_2023_stationkeeping2_task.sdf\n'}
+[19.567690] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/scan_dock_deliver_task.sdf\n'}
+[19.567733] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/navigation_task.sdf\n'}
+[19.567791] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/nbpark.sdf\n'}
+[19.567841] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/acoustic_perception_task.sdf\n'}
+[19.567894] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/wildlife_task.sdf\n'}
+[19.567941] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/worlds/perception_task.sdf\n'}
+[19.568029] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/ament_index/resource_index/package_run_dependencies/vrx_gz\n'}
+[19.568107] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/ament_index/resource_index/parent_prefix_path/vrx_gz\n'}
+[19.568179] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/environment/ament_prefix_path.sh\n'}
+[19.568250] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/environment/ament_prefix_path.dsv\n'}
+[19.568311] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/environment/path.sh\n'}
+[19.568372] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/environment/path.dsv\n'}
+[19.568437] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/local_setup.bash\n'}
+[19.568494] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/local_setup.sh\n'}
+[19.568556] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/local_setup.zsh\n'}
+[19.568615] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/local_setup.dsv\n'}
+[19.568674] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/package.dsv\n'}
+[19.568739] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/ament_index/resource_index/packages/vrx_gz\n'}
+[19.568822] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/cmake/vrx_gzConfig.cmake\n'}
+[19.568877] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/cmake/vrx_gzConfig-version.cmake\n'}
+[19.568931] (vrx_gz) StdoutLine: {'line': b'-- Installing: /home/zjh/vrx_ws/install/share/vrx_gz/package.xml\n'}
+[19.570403] (vrx_gz) CommandEnded: {'returncode': 0}
+[19.601439] (-) TimerEvent: {}
+[19.651114] (vrx_gz) JobEnded: {'identifier': 'vrx_gz', 'rc': 0}
+[19.651590] (-) EventReactorShutdown: {}

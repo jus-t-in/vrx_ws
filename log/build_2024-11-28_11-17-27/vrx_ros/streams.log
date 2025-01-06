@@ -1,0 +1,26 @@
+[0.007s] Invoking command in '/home/zjh/vrx_ws/build/vrx_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zjh/dev_ws/install/learning_urdf:/home/zjh/dev_ws/install/learning_topic:/home/zjh/dev_ws/install/learning_tf:/home/zjh/dev_ws/install/learning_service:/home/zjh/dev_ws/install/learning_qos:/home/zjh/dev_ws/install/learning_pkg_python:/home/zjh/dev_ws/install/learning_parameter:/home/zjh/dev_ws/install/learning_node:/home/zjh/dev_ws/install/learning_launch:/home/zjh/dev_ws/install/learning_action:/home/zjh/dev_ws/install/learning_gazebo_harmonic:/home/zjh/dev_ws/install/learning_gazebo:/home/zjh/dev_ws/install/learning_cv:/opt/ros/humble /usr/bin/cmake --build /home/zjh/vrx_ws/build/vrx_ros -- -j24 -l24
+[0.048s] [ 50%] Built target pose_tf_broadcaster
+[0.048s] [100%] Built target optical_frame_publisher
+[0.054s] Invoked command in '/home/zjh/vrx_ws/build/vrx_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zjh/dev_ws/install/learning_urdf:/home/zjh/dev_ws/install/learning_topic:/home/zjh/dev_ws/install/learning_tf:/home/zjh/dev_ws/install/learning_service:/home/zjh/dev_ws/install/learning_qos:/home/zjh/dev_ws/install/learning_pkg_python:/home/zjh/dev_ws/install/learning_parameter:/home/zjh/dev_ws/install/learning_node:/home/zjh/dev_ws/install/learning_launch:/home/zjh/dev_ws/install/learning_action:/home/zjh/dev_ws/install/learning_gazebo_harmonic:/home/zjh/dev_ws/install/learning_gazebo:/home/zjh/dev_ws/install/learning_cv:/opt/ros/humble /usr/bin/cmake --build /home/zjh/vrx_ws/build/vrx_ros -- -j24 -l24
+[0.077s] Invoking command in '/home/zjh/vrx_ws/build/vrx_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zjh/dev_ws/install/learning_urdf:/home/zjh/dev_ws/install/learning_topic:/home/zjh/dev_ws/install/learning_tf:/home/zjh/dev_ws/install/learning_service:/home/zjh/dev_ws/install/learning_qos:/home/zjh/dev_ws/install/learning_pkg_python:/home/zjh/dev_ws/install/learning_parameter:/home/zjh/dev_ws/install/learning_node:/home/zjh/dev_ws/install/learning_launch:/home/zjh/dev_ws/install/learning_action:/home/zjh/dev_ws/install/learning_gazebo_harmonic:/home/zjh/dev_ws/install/learning_gazebo:/home/zjh/dev_ws/install/learning_cv:/opt/ros/humble /usr/bin/cmake --install /home/zjh/vrx_ws/build/vrx_ros
+[0.081s] -- Install configuration: ""
+[0.082s] -- Up-to-date: /home/zjh/vrx_ws/install/lib/vrx_ros/optical_frame_publisher
+[0.082s] -- Up-to-date: /home/zjh/vrx_ws/install/lib/vrx_ros/pose_tf_broadcaster
+[0.082s] -- Up-to-date: /home/zjh/vrx_ws/install/share/vrx_ros/launch
+[0.082s] -- Up-to-date: /home/zjh/vrx_ws/install/share/vrx_ros/launch/monitor_sim.py
+[0.082s] -- Up-to-date: /home/zjh/vrx_ws/install/share/ament_index/resource_index/package_run_dependencies/vrx_ros
+[0.082s] -- Up-to-date: /home/zjh/vrx_ws/install/share/ament_index/resource_index/parent_prefix_path/vrx_ros
+[0.082s] -- Up-to-date: /home/zjh/vrx_ws/install/share/vrx_ros/environment/ament_prefix_path.sh
+[0.083s] -- Up-to-date: /home/zjh/vrx_ws/install/share/vrx_ros/environment/ament_prefix_path.dsv
+[0.083s] -- Up-to-date: /home/zjh/vrx_ws/install/share/vrx_ros/environment/path.sh
+[0.083s] -- Up-to-date: /home/zjh/vrx_ws/install/share/vrx_ros/environment/path.dsv
+[0.083s] -- Up-to-date: /home/zjh/vrx_ws/install/share/vrx_ros/local_setup.bash
+[0.083s] -- Up-to-date: /home/zjh/vrx_ws/install/share/vrx_ros/local_setup.sh
+[0.083s] -- Up-to-date: /home/zjh/vrx_ws/install/share/vrx_ros/local_setup.zsh
+[0.083s] -- Up-to-date: /home/zjh/vrx_ws/install/share/vrx_ros/local_setup.dsv
+[0.083s] -- Installing: /home/zjh/vrx_ws/install/share/vrx_ros/package.dsv
+[0.083s] -- Up-to-date: /home/zjh/vrx_ws/install/share/ament_index/resource_index/packages/vrx_ros
+[0.083s] -- Up-to-date: /home/zjh/vrx_ws/install/share/vrx_ros/cmake/vrx_rosConfig.cmake
+[0.083s] -- Up-to-date: /home/zjh/vrx_ws/install/share/vrx_ros/cmake/vrx_rosConfig-version.cmake
+[0.083s] -- Up-to-date: /home/zjh/vrx_ws/install/share/vrx_ros/package.xml
+[0.084s] Invoked command in '/home/zjh/vrx_ws/build/vrx_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zjh/dev_ws/install/learning_urdf:/home/zjh/dev_ws/install/learning_topic:/home/zjh/dev_ws/install/learning_tf:/home/zjh/dev_ws/install/learning_service:/home/zjh/dev_ws/install/learning_qos:/home/zjh/dev_ws/install/learning_pkg_python:/home/zjh/dev_ws/install/learning_parameter:/home/zjh/dev_ws/install/learning_node:/home/zjh/dev_ws/install/learning_launch:/home/zjh/dev_ws/install/learning_action:/home/zjh/dev_ws/install/learning_gazebo_harmonic:/home/zjh/dev_ws/install/learning_gazebo:/home/zjh/dev_ws/install/learning_cv:/opt/ros/humble /usr/bin/cmake --install /home/zjh/vrx_ws/build/vrx_ros

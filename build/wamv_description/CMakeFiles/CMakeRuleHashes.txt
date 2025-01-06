@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+ef80688d6fbd32f5e07a6628035bd929 CMakeFiles/wamv_description__xacro_auto_generate
+dc1d34050e9c7612362c133cd547676c CMakeFiles/wamv_description_uninstall
+64df41b96ca3e4793dea535ebad29478 urdf/wamv_base.urdf
